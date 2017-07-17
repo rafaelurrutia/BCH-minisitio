@@ -2007,3 +2007,21 @@ iframe h2.tituloh2 .small-comentarios {
     margin-top: 0px;
     text-align: center;
 }
+
+.full-container-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    display: block;
+    background: #012464;
+    z-index: 999!important;
+}
+
+.full-container .container {
+    margin-top: 0px;
+}
+
+.container.main  {
+    margin-top: 65px;
+}
