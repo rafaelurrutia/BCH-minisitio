@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Banco de Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/demo.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/css.css" rel="stylesheet" media="screen">
+    <!--[if lt IE 8]>
+    <link href="css/ie7.css" rel="stylesheet" media="screen">
+    <![endif]-->
+    <meta charset="UTF-8">
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <div class="help_layer">
+      <div class="content_help_layer">
+        <div class="importante">
+          <h1>IMPORTANTE!</h1>
+          <ul>
+            <li class="uno"><span class="arrow"></span>Para navegar por este tutorial, debes desplazarte usando el scroll o barra de desplazamiento vertical.</li>
+            <li class="dos"><span class="arrow"></span>Para volver al mini sitio principal pincha sobre el menú de navegación</li>          
+          </ul>
+          <a href="javascript:;" class="btn-comenzar"></a> 
+        </div>
+      </div>      
+    </div>
+
+    <div class="container container-demo">
+
+      <div class="content-navbar">
+        <div class="navbar">
+          <div class="navbar-inner">
+            <a class="brand" href="javascript:;"><img src="img/logo.png" width="260"></a>
+             <ul class="nav">
+			      <li><a href="index.html">Inicio</a></li>
+			      <li class="active"><a href="portal_personas.html">Portal Personas</a></li>
+			      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal Empresas</a>
+			        <ul class="dropdown-menu">
+			          <li><a href="portal_empresas.html" class="up">Portal Empresa</a></li>
+			          <li><a href="portal_interno.html" class="up">Portal Interno</a></li>
+			          <li><a href="documento.html" class="up">Documentos</a></li>
+		            </ul>
+		          </li>
+			      <li><a href="nuestro_proyecto.html">Nuestro Proyecto</a></li>
+			      
+			      <li><a href="comentarios.html">Coméntanos&nbsp;&nbsp;&nbsp;<img src="img/ico-maletin.png"></a></li>
+			      <li><a href="preguntas_frecuentes.html">&nbsp;<img src="img/ico-pregunta-menu.png"></a></li>
+			      </ul>
+          </div>
+        </div><!-- fin navbar -->
+      </div>
+
+      <div class="row demo" id="demo-1">
+        <div class="span9 demo-content-1">
+          <h2>Ingreso - Generalidades Login</h2>
+          <ul class="breadcrumb">
+            <li><a href="index.html#funcionalidades-empresa">Funcionalidades Portal Personas</a> <span class="divider">/</span></li>
+            <li class="active">Ingreso - Generalidades Login</li>
+          </ul>
+          <p>La página de Login o ingreso al Nuevo Portal Personas se perfeccionó y simplificó. El nuevo Portal entrega la opción de obtener clave remota en caso de <a href="#demo-2" class="transicion"><i>Solicitud de Clave</i></a>  por primera vez o recuperar clave en forma remota en caso de <a href="#demo-3" class="transicion"><i> Olvido de Clave</i></a> o en caso de <a href="#demo-4" class="transicion"><i>Bloqueo de Clave</i></a>.</p>
+
+          <p>En una primera etapa de producción interna, existirá una misma página de Login/Ingreso para ambos portales (BCH y BEC). Sin embargo, una vez que las páginas se publiquen a clientes externos y se diferencien según look de cada marca, mantendrán la misma lógica para obtener clave en forma remota</p>
+
+          <p>Adicionalmente, el cliente tiene la opción de llamar a Fonobank para que tras autenticarlo le envíen una clave a su teléfono celular (<a href="#demo-5" class="transicion"><i>Envío de Clave vía Fonobank</i></a>), que posteriormente deberá modificar con un sencillo procedimiento.</p>
+          
+        </div>
+        <div class="span3 demo-content-2">
+          <ul class="nav nav-list">
+            <li class="active">
+              <a href="javascript:;">Generalidades Login</a>
+            </li>
+            <li>
+              <a href="#demo-2">Solicitud de Clave</a>
+            </li>
+            <li>
+              <a href="#demo-3">Olvido de Clave</a>
+            </li>
+            <li>
+              <a href="#demo-4">Desbloqueo y Reactivación de clave</a>
+            </li>
+            <li>
+              <a href="#demo-5">Envío de Clave vía Fonobank</a>
+            </li>
+          </ul>
+          <br><br><br>
+        </div>
+      </div>
+      <div class="row demo">
+        <div class="span3">
+          <h5>Actual Página Login</h5>
+          <a href="img/demo/login-actual.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img/demo/login-actual-mini.jpg" class="img-nuevo-login"></a>
+          
+          <!--p>En la actual página de login el Usuario debe ingresar RUT Empresa, RUT Usuario y Clave, y al acceder a la página de inicio, sólo podrá operar con la empresa que ingresó.</p-->
+        </div>
+        <div class="span6">
+          <h5>Nueva Página de Login</h5>
+          <div class="content-img-demo">
+            <img src="img/demo/lac1.png" class="img-nuevo-login">
+            <a href="img/demo/lac1.png" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand" id="ico-expand" ></a>
+
+            <a href="javascript:;" class="tooltips" style="left: 288px; top: 119px;" data-toggle="popover" title="" data-placement="right" data-content="El usuario debe ingresar su rut">1</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 289px; top: 143px;" data-toggle="popover" title="" data-placement="right" data-content="El usuario debe ingresar su clave">2</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 158px; top: 186px;" data-toggle="popover" title="" data-placement="right" data-content="Opción para que el usuario obtenga una nueva clave si la ha olvidado">3</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 290px; top: 186px;" data-toggle="popover" title="" data-placement="right" data-content="Opción para que el usuario obtenga clave del nuevo Portal por primera vez">4</a>
+
+          </div>
+        </div>
+        <div class="span3">
+          <h5>&nbsp;</h5>
+          <div class="descripcion-caracteristicas">
+            <h5>CARACTERÍSTICAS DEL NUEVO LOGIN</h5>
+            <p>Permite obtener clave por primera vez en forma remota, sin necesidad de ir a una oficina.</p>   <hr>
+            <p>Se reforzaron las políticas de seguridad. La nueva clave permite caracteres especiales y se incorpora un gráfico que muestra el nivel de  calidad de la nueva clave ingresada.</p>
+          </div>
+        </div>
+
+        <div class="content-btns-login">
+          <div class="span2">
+            <a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+          </div>
+          <div class="span2 offset8">
+            <a href="#demo-2" class="transicion"><img src="img-demo/siguiente.png"></a>
+          </div>
+        </div>
+
+        <div class="span12"><hr></div>
+
+      </div>
+      
+      <div class="row demo demo-parte-2" id="demo-2">
+        <div class="span12 demo-content-3">
+          <h2>Ingreso - Solicitud de Clave</h2>
+          <ul class="breadcrumb">
+            <li><a href="index.html#funcionalidades-empresa">Funcionalidades Portal Personas</a> <span class="divider">/</span></li>
+            <li class="active">Solicitud de Clave</li>
+          </ul>
+          <p>En el nuevo Portal Personas, se mejoró la funcionalidad de Solicitud de Clave, permitiendo su obtención remota. Para hacerlo, el usuario tiene tres opciones:</p>
+        </div>
+
+        <div class="span12">&nbsp;</div>
+        <div class="span12">
+          <h5>1 | Solicitud de Clave con clave Banco en Línea - Sólo Una vez</h5>
+          <p>La clave de la plataforma actual (Banco en Línea) le permite al usuario enrolarse en esta plataforma obteniendo una nueva clave de acceso, sin necesidad de ir a una sucursal.</p>
+          <div class="content-img-demo">
+            
+            <img src="img/demo/solicitud-banco-en-linea-01.jpg" class="img-nuevo-login">
+            
+            <a href="img/demo/solicitud-banco-en-linea-01.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+            <a href="javascript:;" class="tooltips" style="left: 550px; top: 326px;" data-toggle="popover" title="" data-placement="left" data-content="Gráfico calidad de clave.">1</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 808px; top: 194px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario debe asegurarse que su nueva clave cumpla con las políticas de seguridad.">2</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 568px; top: 415px;" data-toggle="popover" title="" data-placement="right" data-content="El usuario deberá ingresar su rut, clave Banco en Línea y luego generar su nueva clave de la Plataforma.">3</a>
+           
+          </div>
+        </div>
+
+        <div class="span12">&nbsp;</div>
+
+        <div class="span6">
+          <h5>2 | Solicitud de Clave con Tarjeta de Débito</h5>
+          <div class="content-img-demo">
+            <img src="img/demo/solicitud-banco-en-linea-02.jpg" class="img-nuevo-login">
+            
+            <a href="img/demo/solicitud-banco-en-linea-02.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+             <a href="javascript:;" class="tooltips" style="left: 211px; top: 155px;" data-toggle="popover" title="" data-placement="right" data-content="Gráfico calidad de clave.">1</a>
+
+             <a href="javascript:;" class="tooltips" style="left: 303px; top: 163px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario debe asegurarse que su nueva clave cumpla con las políticas de seguridad.">2</a>
+
+             <a href="javascript:;" class="tooltips" style="left: 280px; top: 244px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario deberá ingresar su rut, clave Tarjeta de Débito, generar su nueva clave de la Plataforma y validar la operación con su dispositivo de seguridad.">3</a>
+                
+          </div>
+        </div>
+
+        <div class="span6">
+          <h5>3 | Solicitud de Clave con Tarjeta de Crédito</h5>
+          <div class="content-img-demo">
+            <img src="img/demo/solicitud-banco-en-linea-03.jpg" class="img-nuevo-login">
+            
+            <a href="img/demo/solicitud-banco-en-linea-03.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+             <a href="javascript:;" class="tooltips" style="left: 208px; top: 170px;" data-toggle="popover" title="" data-placement="right" data-content="Gráfico calidad de clave.">1</a>
+
+             <a href="javascript:;" class="tooltips" style="left: 302px; top: 165px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario debe asegurarse que su nueva clave cumpla con las políticas de seguridad.">2</a>
+
+             <a href="javascript:;" class="tooltips" style="left: 280px; top: 258px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario deberá ingresar su rut, número Tarjeta de Crédito, clave pin pass, generar su nueva clave de la plataforma y validar la operación con su dispositivo de seguridad.">3</a>            
+                
+          </div>
+        </div>
+
+        <div class="content-btns-login">
+          <div class="span2">
+            <a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+          </div>
+          <div class="span2 offset6">
+            <a href="#demo-1" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+          </div>
+          <div class="span2">
+            <a href="#demo-3" class="transicion"><img src="img-demo/siguiente.png"></a>
+          </div>
+        </div>
+
+        <div class="span12"><hr></div>
+
+      </div>
+
+      <div class="row demo demo-parte-3" id="demo-3">
+        <div class="span12 demo-content-3">
+          <h2>Ingreso - Olvido de Clave</h2>
+          <ul class="breadcrumb">
+            <li><a href="index.html#funcionalidades-empresa">Funcionalidades Portal Personas</a> <span class="divider">/</span></li>
+            <li class="active">Olvido de Clave</li>
+          </ul>
+          <p>Si el usuario olvidó su clave, entonces, cuando presione el hipervínculo “Olvido de Clave” en la pantalla de Login, se le desplegará una página donde podrá crear una nueva clave siempre y cuando tenga una tarjeta de débito o tarjeta de crédito.. </p>
+        </div>
+       
+        <div class="span12">&nbsp;</div>
+        <div class="span6">
+          <h5>1 | Olvido de clave con tarjeta de débito</h5>
+          <div class="content-img-demo">
+            
+            <img src="img/demo/olvido-td-dispositivo-01.jpg" class="img-nuevo-login">
+            <a href="img/demo/olvido-td-dispositivo-01.jpg" target="_blank" alt="se abre en una nueva ventana" > <img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+            <a href="javascript:;" class="tooltips" style="left: 208px; top: 156px;" data-toggle="popover" title="" data-placement="right" data-content="Gráfico calidad de clave.">1</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 302px; top: 165px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario debe asegurarse que su nueva clave cumpla con las políticas de seguridad.">2</a>
+
+             <a href="javascript:;" class="tooltips" style="left: 280px; top: 243px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario deberá ingresar su rut, clave Tarjeta de Débito, generar su nueva clave de la Plataforma y validar la operación con su dispositivo de seguridad.">3</a>
+            
+          </div>
+        </div>
+
+        <div class="span6">
+           <h5>2 | Olvido de clave con tarjeta de crédito</h5>
+          <div class="content-img-demo">
+            <img src="img/demo/olvido-td-dispositivo-02.jpg" class="img-nuevo-login">
+            <a href="img/demo/olvido-td-dispositivo-02.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+            <a href="javascript:;" class="tooltips" style="left: 208px; top: 170px;" data-toggle="popover" title="" data-placement="right" data-content="Gráfico calidad de clave.">1</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 302px; top: 165px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario debe asegurarse que su nueva clave cumpla con las políticas de seguridad.">2</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 280px; top: 257px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario deberá ingresar su rut, número Tarjeta de Crédito, clave pin pass, generar su nueva clave de la plataforma y validar la operación con su dispositivo de seguridad.">3</a>             
+    
+          </div>
+        </div>
+
+        <div class="content-btns-login">
+          <div class="span2">
+            <a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+          </div>
+          <div class="span2 offset6">
+            <a href="#demo-2" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+          </div>
+          <div class="span2 ">
+            <a href="#demo-4" class="transicion"><img src="img-demo/siguiente.png"></a>
+          </div>
+        </div>
+
+        <div class="span12"><hr></div>
+
+      </div>  
+
+      <div class="row demo-parte-4" id="demo-4">
+        <div class="span12 demo-content-3">
+          <h2>Ingreso - Desbloqueo y Reactivación de clave</h2>
+          <ul class="breadcrumb">
+            <li><a href="index.html#funcionalidades-empresa">Funcionalidades Portal Personas</a> <span class="divider">/</span></li>
+            <li class="active">Desbloqueo y Reactivación de Clave</li>
+          </ul>
+          <p>Si el usuario ingresó su clave 3 veces de manera errónea, entonces se bloqueará y se le desplegará esta pantalla. En el caso que el usuario recuerde su clave y desee activarla, el sistema le da la opción “Reactivación Clave Bloqueada”. Si no recuerda su clave, el usuario podrá desbloquearla vía la opción de <a href="#demo-3"><i>Olvido de Clave</i></a> e ingresar una nueva clave.</p>
+        </div>
+
+   
+        <div class="span12">&nbsp;</div>
+        <div class="span8">
+          <div class="content-img-demo">
+
+            <img src="img/demo/reactivacion-01.jpg" class="img-nuevo-login">
+            
+            <a href="img/demo/reactivacion-01.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+            <a href="javascript:;" class="tooltips" style="left: 345px; top: 130px;" data-toggle="popover" title="" data-placement="right" data-content="Al hacer click acá el usuario ingresa al flujo de Olvido de Clave descrito anteriormente.">1</a>
+
+          </div>
+        </div>
+
+        <div class="span4">
+          <div class="content-img-demo">
+            <p>Al hacer click en “Reactivación de Clave”, se desplegará la siguiente pantalla</p>
+
+            <img src="img/demo/reactivacion-02.jpg" class="img-nuevo-login">
+            <a href="img/demo/reactivacion-02.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+
+
+            <a href="javascript:;" class="tooltips" style="left: 139px; top: 108px;" data-toggle="popover" title="" data-placement="right" data-content="El usuario debe ingresar su rut y clave de dispositivo de seguridad para reactivar y desbloquear su clave">1</a>         
+           
+          </div>
+        </div>
+
+        <div class="content-btns-login">
+          <div class="span2">
+            <a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+          </div>
+          <div class="span2 offset6">
+            <a href="#demo-3" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+          </div>
+          <div class="span2 ">
+            <a href="#demo-5" class="transicion"><img src="img-demo/siguiente.png"></a>
+          </div>
+        </div>
+
+        <div class="span12"><hr></div>
+
+      </div>
+
+      <div class="row demo-parte-5" id="demo-5">
+        <div class="span12 demo-content-3">
+          <h2>Ingreso – Envío de Clave vía Fonobank</h2>
+          <ul class="breadcrumb">
+            <li><a href="index.html#funcionalidades-empresa">Funcionalidades Portal Personas</a> <span class="divider">/</span></li>
+            <li class="active">Ingreso - Envío de Clave vía Fonobank</li>
+          </ul>
+          <p>En caso que el usuario no pueda obtener su clave realizando los procesos anteriormente señalados, siempre tendrá la opción de llamar a Fonobank para que tras autenticarlo, se le haga envío de una clave provisoria a su celular vía SMS, que deberá modificar siguiendo el procedimiento que se describe a continuación.</p>
+        </div>
+
+   
+        <div class="span12">&nbsp;</div>
+        <div class="span12">
+        <h5>1 | ingresar al portal los datos de rut y clave provisoria, luego presionar “Ingresar”.</h5>
+          <div class="content-img-demo">
+
+            <img src="img/demo/lac1.png" class="img-nuevo-login">
+            
+            <a href="img/demo/lac1.png" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+            <a href="javascript:;" class="tooltips" style="left: 580px; top: 230px;" data-toggle="popover" title="" data-placement="right" data-content="En primer lugar, el usuario debe ingresar su rut y la clave que le fue enviada vía SMS a su celular.">1</a>
+
+          </div>
+        </div>
+
+        <div class="span12">&nbsp;</div>
+
+        <div class="span12">
+          <h5>2 | volver a ingresar la clave provisoria (campo clave actual) y luego ingresar una nueva clave que cumpla con las políticas de seguridad señaladas en el recuadro derecho. Tras lo anterior, se desplegará una pantalla de éxito del proceso recién completado.</h5>
+          <div class="content-img-demo">
+            
+            <img src="img/demo/lac2.png" class="img-nuevo-login">
+            
+            <a href="img/demo/lac2.png" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+            <a href="javascript:;" class="tooltips" style="left: 211px; top: 158px;" data-toggle="popover" title="" data-placement="left" data-content="El usuario debe volver a ingresar la clave que le fue enviada vía SMS a su celular." data-original-title="">1</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 366px; top: 214px;" data-toggle="popover" title="" data-placement="right" data-content="Posteriormente debe ingresar una nueva clave que cumpla con las políticas de seguridad señaladas en el cuadro derecho." data-original-title="">2</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 595px; top: 287px;" data-toggle="popover" title="" data-placement="right" data-content="Luego, presionar en validar para que el sistema apruebe la nueva clave." data-original-title="">3</a>
+           
+          </div>
+        </div>
+        <div class="span12">&nbsp;</div>
+
+        <div class="span12">
+
+          <div class="content-img-demo">
+            
+            <img src="img/demo/lac3.png" class="img-nuevo-login">
+            
+            <a href="img/demo/lac3.png" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+          </div>
+        </div>
+
+        <div class="span12">&nbsp;</div>
+
+        <div class="span12">
+        <div class="span12">&nbsp;</div>
+          <p>A continuación, cuando el cliente vuelva a ingresar al portal con la nueva clave creada, se desplegará un pequeño flujo de enrolamiento, solicitándole ingresar sus datos de contacto y 3 preguntas y respuestas de seguridad, que posteriormente servirán para autenticarlo.</p>
+          <div class="span12">&nbsp;</div>
+          <div class="content-img-demo">
+            
+            <img src="img/demo/lac1.png" class="img-nuevo-login">
+            
+            <a href="img/demo/lac1.png" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+            <a href="javascript:;" class="tooltips" style="left: 566px; top: 204px;" data-toggle="popover" title="" data-placement="right" data-content="El usuario debe ingresar su rut y la nueva clave creada." data-original-title="">1</a>
+
+
+           
+          </div>
+        </div>
+        <div class="span12">&nbsp;</div>
+
+        <div class="span12">
+          <div class="content-img-demo">
+            
+            <img src="img/demo/lac5.png" class="img-nuevo-login">
+            
+            <a href="img/demo/lac5.png" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+            <a href="javascript:;" class="tooltips" style="left: 599px; top: 134px;" data-toggle="popover" title="" data-placement="left" data-content="Tras lo anterior, el usuario debe confirmar sus datos de contacto (celular y mail). Por defecto vienen cargados." data-original-title="">1</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 423px; top: 277px;" data-toggle="popover" title="" data-placement="right" data-content="Luego, debe escoger y responder tres preguntas de seguridad de un listado, procurando que cumplan con las políticas mencionadas en el cuadro del lado derecho." data-original-title="">2</a>
+
+            <a href="javascript:;" class="tooltips" style="left: 595px; top: 614px;" data-toggle="popover" title="" data-placement="right" data-content="Finalmente, presionar en “Aceptar”, tras lo cual el sistema registra los datos de contacto y preguntas de seguridad del cliente recién enrolado." data-original-title="">3</a>
+           
+          </div>
+        </div>
+        <div class="span12">&nbsp;</div>
+
+        <div class="span12">
+
+          <div class="content-img-demo">
+            
+            <img src="img/demo/lac4.png" class="img-nuevo-login">
+            
+            <a href="img/demo/lac4.png" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a> 
+
+          </div>
+        </div>
+
+
+        <div class="content-btns-login">
+          <div class="span2">
+            <a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+          </div>
+          <div class="span2 offset6">
+            <a href="#demo-3" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+          </div>
+          <div class="span2 ">
+            <a href="#demo-5" class="transicion"><img src="img-demo/siguiente.png"></a>
+          </div>
+        </div>
+
+        <div class="span12"><hr></div>
+
+      </div>
+
+
+     
+
+
+    </div> <!-- fin container -->
+    
+    <a href="#" class="scrollToTop" title="Subir">
+      <span>Inicio</span>
+    </a>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

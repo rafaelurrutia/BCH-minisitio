@@ -1,0 +1,65 @@
+.container-documentos{
+  background: #ffffff;
+  min-height: 768px;
+}
+.documentos-content-1{
+  margin-top: 110px;
+  color:#303030;
+}
+.documentos-content-1 p{
+  padding-right: 15px;
+  text-align: justify;
+}
+.documentos-content-1 h2{
+  color: #245894;
+}
+.documentos-content-2{
+  margin-top: 110px;
+
+}
+.documentos h5{
+  color: #255a9b;
+}
+.documentos p{
+  color:#525252;
+}
+
+.documentos .breadcrumb{
+  padding: 0;
+  margin-bottom: 20px;
+  background: #ffffff;
+}
+
+.documentos .breadcrumb .active{
+  color: #5f9c05;
+}
+
+.accordion-group{
+/*  border:1px solid #1b599e !important;*/
+  margin-bottom: 2px !important;
+}
+
+#accordion1 .accordion-group{
+  background: #ffffff;
+}
+
+#accordion1 .accordion-inner{
+  border-top: 1px solid #1b599e;
+}  
+
+
+#accordion1 a{
+	font-size: 14px;
+	background: url(../img/flechita_abajo.png) right top no-repeat;
+}
+
+
+#accordion1 ul li a{
+  color: #878787;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.docs-volver{
+  margin: 20px 0 ;
+}

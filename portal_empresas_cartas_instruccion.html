@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Banco de Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/demo.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/css.css" rel="stylesheet" media="screen">
+    <style type="text/css">
+    .container.container-demo .item-demo #demo-2 .span12.demo-content-3 ul li span {
+	color: #474747;
+}
+    .container.container-demo .item-demo #demo-3 .span12.demo-content-3 ul li span {
+	color: #525252;
+}
+    </style>
+    <!--[if lt IE 8]>
+    <link href="css/ie7.css" rel="stylesheet" media="screen">
+    <![endif]-->
+    <meta charset="UTF-8">
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+  	<div class="help_layer">
+      <div class="content_help_layer">
+        <div class="importante">
+          <h1>IMPORTANTE!</h1>
+          <ul>
+            <li class="uno"><span class="arrow"></span>Para navegar por este tutorial, debes desplazarte usando el scroll o barra de desplazamiento vertical.</li>
+            <li class="dos"><span class="arrow"></span>Para volver al mini sitio principal pincha sobre el menú de navegación</li>          
+          </ul>
+          <a href="javascript:;" class="btn-comenzar"></a> 
+        </div>
+      </div>      
+    </div>
+    
+	 
+
+
+	<div class="container container-demo">
+		<div class="content-navbar">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<a class="brand" href="#"><img src="img/logo.png" width="260"></a>
+					 <ul class="nav">
+			      <li><a href="index.html">Inicio</a></li>
+			      <li><a href="portal_personas.html">Portal Personas</a></li>
+			      <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal Empresas</a>
+			        <ul class="dropdown-menu">
+			          <li><a href="portal_empresas.html" class="up">Portal Empresa</a></li>
+			          <li><a href="portal_interno.html" class="up">Portal Interno</a></li>
+			          <li><a href="documento.html" class="up">Documento</a></li>
+		            </ul>
+		          </li>
+			      <li><a href="nuestro_proyecto.html">Nuestro Proyecto</a></li>
+			      
+			      <li><a href="comentarios.html">Coméntanos&nbsp;&nbsp;&nbsp;<img src="img/ico-maletin.png"></a></li>
+			      <li><a href="preguntas_frecuentes.html">&nbsp;<img src="img/ico-pregunta-menu.png"></a></li>
+			      </ul>				</div>
+			</div><!-- fin navbar -->
+		</div>
+
+	 
+	 
+		<div class="item-demo">
+			<div class="row demo" id="demo-1">
+				<div class="span9 demo-content-1">
+					<h2>Cartas Instrucción - Generalidades</h2>
+					<ul class="breadcrumb">
+						<li><a href="portal_empresas.html">Funcionalidades Portal Empresas</a> <span class="divider">/</span></li>
+						<li class="active">Cartas Instrucción - Generalidades </li>
+					</ul>
+					
+					<p>Esta funcionalidad de la Nueva Internet Empresa, permite el envío de Cartas de Instrucción de manera segura y eficiente a través de un sistema digital entre clientes y Banco, optimizando la creación, gestión y tracking de los procesos internos de clientes Empresa, y posibilitará al Banco realizar un delivery ajustado a las normativas y protocolos de seguridad en procesos de gestión y respuesta ágil.</p>
+                    <p>El proceso de creación y envío de una Carta de Instrucción, comienza con la Inscripción por un usuario empresa, luego tiene que ser Autorizada por un Apoderado Empresa. Tras ello, viaja al Banco para ser ejecutada por un usuario rol banco (este paso se realiza en el Portal Interno*).
+</p>
+<p>Hay que tener en cuenta:</p>
+					<ul>
+						<li>Un usuario con rol Inscriptor puede: Inscribir Instrucciones (Usando plantilla o subiendo archivo PDF) y Consultar/Modificar Instrucciones.
+</li>
+						<li>Un usuario con rol Autorizador podrá: Validar (Aprobar o Rechazar) Instrucciones y Consultar Instrucciones.</i>
+                        <i>Además, un mismo usuario podría tener rol de Inscriptor y Autorizador al mismo tiempo.</i>
+					</ul>
+					<p>Para inscribir una nueva Carta de Instrucción, hay que ingresar desde el menú <i>Instrucciones > Inscribir.</i></p>
+				</div>
+				<div class="span3 demo-content-2">
+					<ul class="nav nav-list">
+						<li class="active">
+							<a href="#">Generalidades Cartas Instrucción</a>
+						</li>
+						<li>
+							<a href="#demo-2">Inscripción de Instrucción</a>
+						</li>
+						<li>
+							<a href="#demo-3">Inscripción de Instrucción usando Plantilla</a>
+						</li>
+						<li>
+							<a href="#demo-4">Inscripción de Instrucción cargando documento PDF</a>
+						</li>
+						<li>
+							<a href="#demo-5">Consulta de Instrucción</a>
+						</li>
+                        <li>
+							<a href="#demo-6">Validar instrucciones rol Autorizador</a>
+						</li>
+					</ul>
+			
+				</div>
+			</div>
+			<div class="row demo">
+				
+				<div class="span12">
+					<h5></h5>
+					<div class="content-img-demo">
+						<img src="img/demo/menu_rol_inscriptor.jpg" width="996" height="413"  class="img-nuevo-login">
+						
+						<a href="img/demo/menu_rol_inscriptor.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+
+						
+
+												
+
+						
+					</div>
+                    <div class="span12">&nbsp;</div>
+						 <p>(*) En esta sección se describirán las funcionalidades del <i>Inscriptor</i> y <i>Autorizador de Instrucciones</i>. El rol Banco se describe en Funcionalidades Portal Interno.</p>
+				</div>
+				
+				<div class="content-btns-login">
+					<div class="span2">
+						<a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+
+					</div>
+					<div class="span2 offset8">
+						<a href="#demo-2" class="transicion"><img src="img-demo/siguiente.png"></a>
+					</div>
+                   
+				</div>
+
+				<div class="span12">
+					<hr>
+				</div>
+			</div>
+		</div>
+		<!--//slide 1-->
+		<!--//slide 2-->
+		<div class="item-demo">
+			<div class="row demo-parte-2" id="demo-2">
+				<div class="span12 demo-content-3">
+					<h2>Cartas Instrucción - Inscripción de Instrucción </h2>
+					<ul class="breadcrumb">
+						<li><a href="portal_empresas.html">Funcionalidades Portal Empresas</a> <span class="divider">/</span></li>
+						<li class="active">Inscripción de Instrucción </li>
+					</ul>
+                    <p>Al ingresar al flujo de inscripción de Instrucción, el sistema mostrará la opción de utilizar una plantilla prediseñada (por defecto), o subir una Carta de Instrucción en formato PDF. Al utilizar la primera, se le presentará al usuario la alternativa de utilizar Plantillas Favoritas, guardadas anteriormente como tal. </p>
+                  <p>El proceso de Inscripción de Instrucción consta de tres pasos:</p>
+                    <ul>
+                    	<li><span><strong>Paso 1:</strong> <i>Tipo de Instrucción</i>
+</span></li>
+<li><span><strong>Paso 2:</strong> <i>Datos de la Instrucción</i>
+</span></li>
+<li><span><strong>Paso 3:</strong> <i>Autorizadores</i>
+</span></li>
+                    </ul>
+                    <p>Dependiendo del tipo de carga que se esté realizando (utilizando plantilla o cargando PDF) y el tipo de Inscripción, el paso 2 mostrará un formulario específico dependiendo de estos datos.  El paso 1 y 3 siempre mantienen los mismos elementos.</p>
+				</div>	   
+
+				
+				<div class="span12">
+				  <div class="content-img-demo"></div>
+
+					
+
+				</div>
+				<div class="span8">
+					<div class="content-img-demo">
+						<img src="img/demo/incscripcion_instruccion.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/incscripcion_instruccion.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+						<a href="javascript:;" class="tooltips" style="left: 236px; top: 93px;" data-toggle="popover" title="" data-placement="right" data-content="Selección de tipo de Inscripción.">1</a>
+                        <a href="javascript:;" class="tooltips" style="left: 196px; top: 142px;" data-toggle="popover" title="" data-placement="right" data-content="Se puede utilizar una plantilla favorita, en el caso de tener alguna registrada.">2</a>
+                         <a href="javascript:;" class="tooltips" style="left: 18px; top: 246px;" data-toggle="popover" title="" data-placement="right" data-content="Se define el tipo de Instrucción. Dependiendo de esta selección, en el paso 2 se mostrará el formulario respectivo.
+">3</a>
+                         <a href="javascript:;" class="tooltips" style="left: 589px; top: 250px;" data-toggle="popover" title="" data-placement="right" data-content="Se ingresa una referencia (puede ser un código interno de la empresa, o un título genérico para ese tipo de Instrucción)">4</a>
+                                                  <a href="javascript:;" class="tooltips" style="left: 23px; top: 367px;" data-toggle="popover" title="" data-placement="right" data-content="El siguiente paso es seleccionar a el o los Apoderados que tendrán que autorizar esta Instrucción.">7</a>
+                                                                                                    <a href="javascript:;" class="tooltips" style="left: 473px; top: 428px;" data-toggle="popover" title="" data-placement="right" data-content="Al ir seleccionando desde el menú desplegable, se irán mostrando al costado. Para eliminar a algún Apoderado de la lista, hay que hacer clic en el ícono <i>(X)</i>
+">8</a>
+                                                                                                     <a href="javascript:;" class="tooltips" style="left: 239px; top: 589px;" data-toggle="popover" title="" data-placement="right" data-content="Se ingresa la Clave del Dispositivo de Seguridad.">9</a>
+                                                                                                     
+                                                                                                      <a href="javascript:;" class="tooltips" style="left: 499px; top: 645px;" data-toggle="popover" title="" data-placement="right" data-content="Se finaliza el proceso haciendo clic en el botón Inscribir.
+">10</a>
+
+                                                 
+
+
+						
+					</div>
+				</div>
+                
+                
+				<div class="span4">
+					<div class="content-img-demo">
+						<img src="img/demo/inscripcion_instruccion_02.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/inscripcion_instruccion_02.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+					       <a href="javascript:;" class="tooltips" style="left: 13px; top: 31px;" data-toggle="popover" title="" data-placement="right" data-content="En el sidebar se presentan las recomendaciones e información de importancia para la inscripción de una <i>Carta de Instrucción</i>. Cada Tipo de Inscripción presenta información personalizada.">5</a>	
+                           <a href="javascript:;" class="tooltips" style="left: 274px; top: 578px;" data-toggle="popover" title="" data-placement="left" data-content="Al hacer clic en <i>Verificar datos faltantes</i>, el sistema destacará los campos del formulario que no tienen datos ingresados.
+">6</a>	
+					</div>
+				</div>
+				
+				
+
+				<div class="content-btns-login">
+					<div class="span2">
+						<a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+					</div>
+					<div class="span2 offset6">
+						<a href="#demo-1" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+					</div>
+					<div class="span2">
+						<a href="#demo-3" class="transicion"><img src="img-demo/siguiente.png"></a>
+					</div>
+				</div>
+
+				<div class="span12">
+				<hr>
+				</div>
+
+			</div>
+		</div>
+		<!--//slide 2-->
+		<!--//slide 3-->
+		<div class="item-demo">
+			<div class="row demo-parte-3" id="demo-3">
+				<div class="span12 demo-content-3">
+					<h2>Cartas Instrucción - Inscripción de Instrucción usando Plantilla</h2>
+					<ul class="breadcrumb">
+						<li><a href="portal_empresas.html">Funcionalidades Portal Empresas</a> <span class="divider">/</span></li>
+						<li class="active">Inscripción de Instrucción usando Plantilla</li>
+					</ul>
+					<p>Al seleccionar esta alternativa de inscripción, el sistema pedirá, para comenzar el proceso, el tipo de instrucción y una referencia. Al completar esos dos datos, el sistema activará el formulario de la Instrucción seleccionada, que el usuario tendrá que completar.  </p>	
+                    <p>Los tipos de Instrucción más utilizados son: </p>
+                                        <ul>
+                    	<li><span><i>Transferencia de Fondos a otros Bancos vía SPAV</i>
+</span></li>
+<li><span><i>Transferencia de Fondos</i>
+</span></li>
+<li><span><i>Compra y Venta de Moneda Spot</i>
+</span></li>
+<li><span><i>Envío Orden de Pago al Exterior</i>
+</span></li>
+                    </ul>
+
+				</div>
+
+				
+				<div class="span8">
+					<div class="content-img-demo">
+						<img src="img/demo/tipodeinstruccion_empresa.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/tipodeinstruccion_empresa.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+											</div>
+				</div>
+				<div class="span4">
+					<div class="demo-panel-azul">
+						<h5><i>Nota:</i></h5>
+						<p>
+<i>A continuación se mostrarán los formularios de los Tipos de Inscripción: Transferencia de Fondos a otros Bancos vía SPAV, Transferencia de Fondos,  Compra y Venta de Moneda Spot y Envío Orden de Pago al Exterior.</i></p>
+					</div>
+				</div>
+                
+                <div class="span6">
+                <h5>I. Transferencia de Fondos a otros Bancos vía SPAV</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/transferencia_fondo_empresa_spav.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/transferencia_fondo_empresa_spav.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 301px; top: 33px;" data-toggle="popover" title="" data-placement="left" data-content="Los datos de la empresa se cargan automáticamente." data-original-title="">1</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 303px; top: 62px;" data-toggle="popover" title="" data-placement="left" data-content="Definir una <strong>Cuenta de Cargo, Monto y Fecha de Ejecución.</strong>
+" data-original-title="">2</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 15px; top: 88px;" data-toggle="popover" title="" data-placement="right" data-content="Información sobre uso horario utilizado por el sistema." data-original-title="">3</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 16px; top: 132px;" data-toggle="popover" title="" data-placement="right" data-content="Se ingresan los datos del Destinatario." data-original-title="">4</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 16px; top: 193px;" data-toggle="popover" title="" data-placement="right" data-content="Si es necesario, se pueden integrar anotaciones u observaciones.
+" data-original-title="">5</a>
+                        
+                         <a href="javascript:;" class="tooltips hover" style="left: 120px; top: 252px;" data-toggle="popover" title="" data-placement="right" data-content="Cada formulario integra la funcionalidad de poder guardar como plantilla el formato completado." data-original-title="">6</a>
+                          <a href="javascript:;" class="tooltips hover" style="left: 339px; top: 90px;" data-toggle="popover" title="" data-placement="left" data-content="En el sidebar se presentan las recomendaciones e información de importancia para la inscripción de una Carta de Instrucción de Transferencia de Fondos a otros Bancos vía SPAV." data-original-title="">7</a>
+                          
+                          <a href="javascript:;" class="tooltips hover" style="left: 358px; top: 261px;" data-toggle="popover" title="" data-placement="left" data-content="Al hacer clic en Verificar datos faltantes, el sistema destacará los campos del formulario que no tienen datos ingresados." data-original-title="">8</a>
+					</div>
+                    <div class="span6">&nbsp;</div>
+					<p>Al finalizar el flujo, se mostrará el comprobante, que podrá ser descargado en formato PDF.</p>
+					
+			  </div>
+                <div class="span6">
+                <h5>II. Transferencia de Fondos</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/transferencia_fondo_empresa.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/transferencia_fondo_empresa.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 319px; top: 32px;" data-toggle="popover" title="" data-placement="left" data-content="Los datos de la empresa se cargan automáticamente." data-original-title="">1</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 319px; top: 61px;" data-toggle="popover" title="" data-placement="left" data-content="Definir la Cuenta de Cargo, Monto y Fecha de Ejecución." data-original-title="">2</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 15px; top: 88px;" data-toggle="popover" title="" data-placement="left" data-content="Información sobre uso horario utilizado por el sistema.
+" data-original-title="">3</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 15px; top: 139px;" data-toggle="popover" title="" data-placement="left" data-content="Se ingresan los datos del Destinatario." data-original-title="">4</a>
+                         <a href="javascript:;" class="tooltips hover" style="left: 16px; top: 202px;" data-toggle="popover" title="" data-placement="left" data-content="Si es necesario, se pueden integrar anotaciones u observaciones." data-original-title="">5</a>
+                         <a href="javascript:;" class="tooltips hover" style="left: 134px; top: 256px;" data-toggle="popover" title="" data-placement="left" data-content="Cada formulario integra la funcionalidad de poder guardar como plantilla el formato completado." data-original-title="">6</a>
+                          <a href="javascript:;" class="tooltips hover" style="left: 434px; top: 48px;" data-toggle="popover" title="" data-placement="left" data-content="En el sidebar se presentan las recomendaciones e información de importancia para la inscripción de una Carta de Instrucción de Transferencia de Fondos." data-original-title="">7</a>
+                          
+                          <a href="javascript:;" class="tooltips hover" style="left: 365px; top: 218px;" data-toggle="popover" title="" data-placement="left" data-content="Al hacer clic en Verificar datos faltantes, el sistema destacará los campos del formulario que no tienen datos ingresados." data-original-title="">8</a>
+
+					</div>
+                    <div class="span6">&nbsp;</div>
+					<p>Al finalizar el flujo, se mostrará el comprobante, que podrá ser descargado en formato PDF.</p>
+					
+				</div>
+                
+                      <div class="span6">
+                <h5>III. Compra y Venta de Moneda Spot</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/Compra_Venta_empresa.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/Compra_Venta_empresa.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 292px; top: 29px;" data-toggle="popover" title="" data-placement="left" data-content="Los datos de la empresa se cargan automáticamente." data-original-title="">1</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 291px; top: 57px;" data-toggle="popover" title="" data-placement="left" data-content="Definir la Fecha de Ejecución, Cuenta de Cargo y tipo de Moneda.
+
+" data-original-title="">2</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 8px; top: 81px;" data-toggle="popover" title="" data-placement="right" data-content="Información sobre uso horario utilizado por el sistema." data-original-title="">3</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 8px; top: 107px;" data-toggle="popover" title="" data-placement="right" data-content="Monto (en moneda seleccionada en el punto 2) que se desea comprar/vender." data-original-title="">4</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 181px; top: 108px;" data-toggle="popover" title="" data-placement="right" data-content="El tipo de cambio negociado con la Mesa (el liberado una vez negociado el cambio de manera telefónica).
+" data-original-title="">5</a>
+                        
+                         <a href="javascript:;" class="tooltips hover" style="left: 249px; top: 107px;" data-toggle="popover" title="" data-placement="right" data-content="El módulo dinámico que cambia dependiendo del monto ingresado y el tipo de cambio negociado." data-original-title="">6</a>
+                          <a href="javascript:;" class="tooltips hover" style="left: 14px; top: 164px;" data-toggle="popover" title="" data-placement="right" data-content="Si es necesario, se pueden integrar anotaciones u observaciones." data-original-title="">7</a>
+                          
+                          <a href="javascript:;" class="tooltips hover" style="left: 116px; top: 215px;" data-toggle="popover" title="" data-placement="right" data-content="Cada formulario integra la funcionalidad de poder guardar como plantilla el formato completado." data-original-title="">8</a>
+                          
+                          <a href="javascript:;" class="tooltips hover" style="left: 335px; top: 52px;" data-toggle="popover" title="" data-placement="left" data-content="En el sidebar se presentan las recomendaciones e información de importancia para la inscripción de una <i>Carta de Instrucción de Compra y Venta de Moneda Spot.</i>" data-original-title="">9</a>
+                          
+                           <a href="javascript:;" class="tooltips hover" style="left: 354px; top: 227px;" data-toggle="popover" title="" data-placement="left" data-content="Al hacer clic en <i>Verificar datos faltantes</i>, el sistema destacará los campos del formulario que no tienen datos ingresados." data-original-title="">10</a>
+					</div>
+                    <div class="span6">&nbsp;</div>
+					<p>Al finalizar el flujo, se mostrará el comprobante, que podrá ser descargado en formato PDF.</p>
+					
+			  </div>
+              
+                                    <div class="span6">
+                <h5>IV. Envío Orden de Pago al Exterior</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/orden_pago_exterior.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/orden_pago_exterior.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 292px; top: 29px;" data-toggle="popover" title="" data-placement="left" data-content="Los datos de la empresa se cargan automáticamente." data-original-title="">1</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 216px; top: 62px;" data-toggle="popover" title="" data-placement="left" data-content="Definir Cuenta de Cargo y Cuenta de Gastos y Comisiones." data-original-title="">2</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 8px; top: 90px;" data-toggle="popover" title="" data-placement="right" data-content="Definir Código de Egreso del Banco Central." data-original-title="">3</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 8px; top: 119px;" data-toggle="popover" title="" data-placement="right" data-content="Seleccionar Moneda de Destino." data-original-title="">4</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 173px; top: 117px;" data-toggle="popover" title="" data-placement="right" data-content="Definir Monto." data-original-title="">5</a>
+                        
+                         <a href="javascript:;" class="tooltips hover" style="left: 289px; top: 120px;" data-toggle="popover" title="" data-placement="right" data-content="Tipo de Cambio de Cierre" data-original-title="">6</a>
+                          <a href="javascript:;" class="tooltips hover" style="left: 98px; top: 173px;" data-toggle="popover" title="" data-placement="right" data-content="Ingresar código SWIFT o ABA." data-original-title="">7</a>
+                          
+                          <a href="javascript:;" class="tooltips hover" style="left: 10px; top: 229px;" data-toggle="popover" title="" data-placement="right" data-content="La información del banco de destino se cargará automáticamente al validar el SWIFT o ABA." data-original-title="">8</a>
+                          
+                          <a href="javascript:;" class="tooltips hover" style="left: 191px; top: 261px;" data-toggle="popover" title="" data-placement="left" data-content="Ingresar código IBAN, si la transferencia es a Europa." data-original-title="">9</a>
+                          
+                           <a href="javascript:;" class="tooltips hover" style="left: 12px; top: 298px;" data-toggle="popover" title="" data-placement="right" data-content="Si es necesario, se pueden integrar anotaciones u observaciones." data-original-title="">10</a>
+                           
+                            <a href="javascript:;" class="tooltips hover" style="left: 10px; top: 337px;" data-toggle="popover" title="" data-placement="right" data-content="Notificar a Beneficiario" data-original-title="">11</a>
+                            
+                                                        <a href="javascript:;" class="tooltips hover" style="left: 10px; top: 362px;" data-toggle="popover" title="" data-placement="right" data-content="Banco Intermediario" data-original-title="">12</a>
+                                                                                                                <a href="javascript:;" class="tooltips hover" style="left: 283px; top: 417px;" data-toggle="popover" title="" data-placement="left" data-content="Política del Banco Ante eventuales atrasos en la transferencia." data-original-title="">13</a>
+                                                                                                                                                                                                                                <a href="javascript:;" class="tooltips hover" style="left: 12px; top: 445px;" data-toggle="popover" title="" data-placement="right" data-content="Cada formulario integra la funcionalidad de poder guardar como plantilla el formato completado." data-original-title="">14</a>
+                                                                                    <a href="javascript:;" class="tooltips hover" style="left: 340px; top: 85px;" data-toggle="popover" title="" data-placement="left" data-content="En el sidebar se presentan las recomendaciones e información de importancia para la inscripción de una Carta de Instrucción de Envío de Orden de Pago al exterior." data-original-title="">15</a>
+                                                                                    <a href="javascript:;" class="tooltips hover" style="left: 358px; top: 380px;" data-toggle="popover" title="" data-placement="left" data-content="Al hacer clic en Verificar datos faltantes, el sistema destacará los campos del formulario que no tienen datos ingresados." data-original-title="">16</a>                                                                                                                                                            
+
+
+					</div>
+                    <div class="span6">&nbsp;</div>
+					<p>Al finalizar el flujo, se mostrará el comprobante, que podrá ser descargado en formato PDF.</p>
+					
+			  </div>
+
+				<div class="span12">&nbsp;</div>
+				<div class="content-btns-login">
+					<div class="span2">
+						<a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+					</div>
+					<div class="span2 offset6">
+						<a href="#demo-2" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+					</div>
+					<div class="span2 ">
+						<a href="#demo-4" class="transicion"><img src="img-demo/siguiente.png"></a>
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+		<!--//slide 3-->
+		<!--//slide 4-->
+		<div class="item-demo">
+			<div class="row demo-parte-3" id="demo-4">
+				<div class="span12 demo-content-3">
+					<h2>Cartas Instrucción - Inscripción de Instrucción cargando documento PDF  </h2>
+					<ul class="breadcrumb">
+						<li><a href="portal_empresas.html">Funcionalidades Portal Empresas</a> <span class="divider">/</span></li>
+						<li class="active">Inscripción de Instrucción cargando documento PDF </li>
+					</ul>
+					<p>Al seleccionar la alternativa Subir Carta de Instrucción, el sistema mostrará un botón para buscar y cargar el documento al sistema. <i>Es muy importante que el documento sea original en formato PDF y que contenga toda la información de la instrucción a procesar, incluidas las firmas de los apoderados autorizadores.</i> Al igual que el caso anterior, el usuario tiene que seleccionar el tipo de instrucción e ingresar una referencia. Con esto, se abrirá el paso 2, que corresponde a los datos de Instrucción. Al terminar de ingresar los datos, se tiene que seleccionar a el o los Apoderados Autorizadores. </p>	
+                    <p>Para finalizar el flujo, hay que ingresar la Clave del Dispositivo de Seguridad y hacer clic en el botón Inscribir.</p>
+			  </div>
+				<div class="span12">
+					<div class="content-img-demo">
+						<img src="img/demo/inscripcion_instruccion.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/inscripcion_instruccion.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 240px; top: 208px;" data-toggle="popover" title="" data-placement="right" data-content="Selección de tipo de Inscripción." data-original-title="">1</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 37px; top: 283px;" data-toggle="popover" title="" data-placement="right" data-content="Se define el tipo de Instrucción y se ingresa una referencia." data-original-title="">2</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 38px; top: 328px;" data-toggle="popover" title="" data-placement="right" data-content="Se busca el documento, que debe ser original en formato PDF, y debe contener toda la información de la instrucción a procesar, incluidas las firmas de los apoderados autorizadores." data-original-title="">3</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 531px; top: 256px;" data-toggle="popover" title="" data-placement="left" data-content="Al tener el documento cargado, el usuario podrá revisarlo, haciendo clic en el botón Visualizar. Se abrirá un lightbox con la visualización del PDF." data-original-title="">4</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 40px; top: 461px;" data-toggle="popover" title="" data-placement="right" data-content="Se ingresan los Datos de la Instrucción requeridos." data-original-title="">5</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 41px; top: 629px;" data-toggle="popover" title="" data-placement="right" data-content="En este tipo de inscripción no se autorizan las operaciones por parte de los apoderados, pero se deben ingresar." data-original-title="">6</a>
+                        
+                            <a href="javascript:;" class="tooltips hover" style="left: 254px; top: 786px;" data-toggle="popover" title="" data-placement="right" data-content="Se ingresa la Clave del Dispositivo de Seguridad.
+" data-original-title="">7</a>
+                            
+                            <a href="javascript:;" class="tooltips hover" style="left: 585px; top: 840px;" data-toggle="popover" title="" data-placement="left" data-content="Se finaliza el proceso haciendo clic en el botón Inscribir.
+" data-original-title="">8</a>
+                            
+                            <a href="javascript:;" class="tooltips hover" style="left: 885px; top: 730px;" data-toggle="popover" title="" data-placement="left" data-content="En el sidebar se presentan algunas recomendaciones para la inscripción de una Carta de Instrucción. Además, al hacer clic en Verificar datos faltantes, el sistema destacará los campos del formulario que no tienen datos ingresados.
+" data-original-title="">9</a>
+
+
+					</div>
+                    <div class="12">&nbsp;</div>
+                    <div class="12">
+                    <p>Al finalizar el flujo, se mostrará el comprobante, que podrá ser descargado en formato PDF.</p>
+                    </div>
+								
+				</div>
+				<div class="span12">
+					<h5></h5>
+					<div class="content-img-demo">
+						<img src="img/demo/comprobante_inscripcion.jpg" width="996" height="413"  class="img-nuevo-login">
+						
+						<a href="img/demo/comprobante_inscripcion.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+
+						
+
+												
+
+						
+					</div>
+                    
+                   
+				</div>
+			
+				<div class="span12">&nbsp;</div>
+				<div class="content-btns-login">
+					<div class="span2">
+						<a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+					</div>
+					<div class="span2 offset6">
+						<a href="#demo-3" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+					</div>
+					<div class="span2 ">
+						<a href="#demo-5" class="transicion"><img src="img-demo/siguiente.png"></a>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<!--//slide 4-->
+		<!--//slide 5-->
+		<div class="item-demo">
+		  <div class="row demo-parte-3" id="demo-5">
+				<div class="span12 demo-content-3">
+					<h2>Cartas de Instrucción – Consulta de Instrucción</h2>
+					<ul class="breadcrumb">
+						<li><a href="portal_empresas.html">Funcionalidades Portal Empresas</a> <span class="divider">/</span></li>
+						<li class="active">Consulta de Instrucción  </li>
+					</ul>
+					<p>Dependiendo del rol de usuario, el cliente puede ingresar y consultar las Cartas de Instrucción que se han enviado. Para esto, tiene que ingresar desde el menú Instrucciones > Consultar.</p>	
+				</div>
+				<div class="span12">
+		
+					<div class="content-img-demo">
+						<img src="img/demo/consulta_instruccion.jpg" width="996" height="413"  class="img-nuevo-login">
+						
+						<a href="img/demo/consulta_instruccion.jpg" target="_blank" alt="se abre en una nueva ventana" ><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+					</div>
+                    
+                   
+				</div>
+                <div class="span12">
+                <div class="span12">&nbsp;</div>
+                <p>Al ingresar, el usuario inscriptor o autorizador podrá ver un menú al lado izquierdo que contiene los diferentes estados en los que se puede encontrar una Carta de Instrucción: En Proceso, Ejecutadas y Rechazadas. También está la opción de listar todas las Instrucciones. </p>
+                <p>En el listado se muestran filtros con varios criterios de búsqueda, mediante los cuales el cliente podrá encontrar una carta en específico. </p>
+                <p>Cada Carta de Instrucción presenta la opción de ver el detalle. En una ventana modal, se muestra la información con la especificación de la instrucción y el estado del proceso. Esta ventana tiene opciones para que el usuario pueda generar comentarios, visualizar la bitácora de los eventos más relevantes del proceso, además la opción de descargar y eliminar la instrucción.</p>
+                
+                </div>
+                <div class="span12">&nbsp;</div>
+                <div class="span12">
+                	<div class="content-img-demo">
+                    <img src="img/demo/consulta_instruccion_02.jpg" class="img-nuevo-login">
+                    
+						<a href="img/demo/consulta_instruccion_02.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+                        <a href="javascript:;" class="tooltips hover" style="left: 23px; top: 194px;" data-toggle="popover" title="" data-placement="left" data-content="Menú de estados de Cartas de Instrucción." data-original-title="">1</a>
+                        <a href="javascript:;" class="tooltips hover" style="left: 712px; top: 132px;" data-toggle="popover" title="" data-placement="left" data-content="Las Instrucciones listadas se pueden ordenar alfabética o numéricamente, gracias a esta funcionalidad." data-original-title="">2</a>
+                        <a href="javascript:;" class="tooltips hover" style="left: 889px; top: 188px;" data-toggle="popover" title="" data-placement="left" data-content="Además, se presentan más filtros para poder analizar los datos de manera más exacta.
+" data-original-title="">3</a>
+                                                <a href="javascript:;" class="tooltips hover" style="left: 897px; top: 432px;" data-toggle="popover" title="" data-placement="left" data-content="Se muestra la información básica de la Carta de Instrucción. Al hacer clic en la lupa, se abrirá el detalle." data-original-title="">4</a>
+
+
+
+                    </div>
+                    <div class="span12">&nbsp;</div>
+                    <div class="span12">
+                    <p>Dependiendo del estado en el que se encuentre la Carta de Instrucción, serán los datos y las opciones que se muestran en el detalle.</p>
+                    </div>
+                </div>
+				<div class="span6">
+                <h5>Cartas inscritas con estado: En espera de autorización</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/transferencia_fondo_tercero.jpg" height="" class="img-nuevo-login">
+
+						<a href="img/demo/transferencia_fondo_tercero.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 398px; top: 63px;" data-toggle="popover" title="" data-placement="left" data-content="Ventana de comentarios" data-original-title="">1</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 398px; top: 88px;" data-toggle="popover" title="" data-placement="left" data-content="Bitácora: Muestra registro del usuario, acción, fecha y hora en que se realizó la acción." data-original-title="">2</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 399px; top: 112px;" data-toggle="popover" title="" data-placement="left" data-content="Descargar Instrucción." data-original-title="">3</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 400px; top: 137px;" data-toggle="popover" title="" data-placement="left" data-content="Eliminar Instrucción." data-original-title="">4</a>
+					</div>
+					
+					
+				</div>
+				<div class="span6">					
+					<h5>Cartas inscritas con estado: En espera de ejecución</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/enejecucion.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/enejecucion.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 396px; top: 88px;" data-toggle="popover" title="" data-placement="left" data-content="Bitácora: Muestra registro del usuario, acción, fecha y hora en que se realizó la acción." data-original-title="">1</a>
+                        
+						<a href="javascript:;" class="tooltips hover" style="left: 395px; top: 118px;" data-toggle="popover" title="" data-placement="left" data-content="Descargar Comprobante." data-original-title="">2</a>
+                        
+                        <a href="javascript:;" class="tooltips hover" style="left: 405px; top: 168px;" data-toggle="popover" title="" data-placement="left" data-content="Muestra un visualizador de PDF en el que se puede ver la carta ingresada." data-original-title="">3</a>	
+					</div>
+            </div>
+               <div class="span12">&nbsp;</div>
+                    <div class="span6">
+                    <h5>Cartas inscritas con estado: Ejecutadas</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/orden_pago_exterior2.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/orden_pago_exterior2.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 397px; top: 89px;" data-toggle="popover" title="" data-placement="left" data-content="Bitácora: Muestra registro del usuario, acción, fecha y hora en que se realizó la acción." data-original-title="">1</a>
+                        <a href="javascript:;" class="tooltips hover" style="left: 397px; top: 116px;" data-toggle="popover" title="" data-placement="left" data-content="Descargar Comprobante." data-original-title="">2</a>
+                        <a href="javascript:;" class="tooltips hover" style="left: 398px; top: 143px;" data-toggle="popover" title="" data-placement="left" data-content="Descargar ACK." data-original-title="">3</a>
+                        <a href="javascript:;" class="tooltips hover" style="left: 396px; top: 173px;" data-toggle="popover" title="" data-placement="left" data-content="Descargar Liquidación." data-original-title="">4</a>
+
+						
+					</div>
+                    </div>
+                                        <div class="span6">
+                    <h5>Cartas inscritas con estado: Rechazadas</h5>
+					<div class="content-img-demo">
+						<img src="img/demo/rechazada.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/rechazada.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 397px; top: 91px;" data-toggle="popover" title="" data-placement="left" data-content="Bitácora: Muestra registro del usuario, acción, fecha y hora en que se realizó la acción." data-original-title="">1</a>
+                        <a href="javascript:;" class="tooltips hover" style="left: 397px; top: 119px;" data-toggle="popover" title="" data-placement="left" data-content="Descargar Comprobante.
+" data-original-title="">2</a>
+                   
+
+						
+					</div>
+                    </div>
+
+
+
+				</div>
+			<div class="content-btns-login">
+				<div class="span2">
+						<a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+			  </div>
+					<div class="span2 offset6">
+						<a href="#demo-4" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+					</div>
+					<div class="span2 ">
+						<a href="#" class="transicion"><img src="img-demo/ir-inicio-demo.png"></a>
+					</div>
+		  </div>
+				<div class="span12">
+				<hr>
+				</div>
+                
+                	<!--//slide 2-->
+		<div class="item-demo">
+			<div class="row demo-parte-2" id="demo-6">
+				<div class="span12 demo-content-3">
+					<h2>Cartas de Instrucción – Validar instrucciones rol Autorizador</h2>
+					<ul class="breadcrumb">
+						<li><a href="portal_empresas.html">Funcionalidades Portal Empresas</a> <span class="divider">/</span></li>
+						<li class="active">Validar instrucciones rol Autorizador</li>
+					</ul>
+                    <p>Dependiendo del rol de usuario, el cliente puede ingresar y Autorizar o Rechazar Cartas de Instrucción que se han enviado. Para esto, tiene que ingresar desde el menú I<i>nstrucciones > Consultar</i> y hacer clic en <i>Mis Cartas ></i> Por Aprobar, del menú del lado izquierdo.</p>
+                 
+				</div>	   
+
+				
+				<div class="span12">
+				  <div class="content-img-demo"></div>
+
+					
+
+				</div>
+			  <div class="span12">
+					<div class="content-img-demo">
+                   
+
+				<span class="content-img-demo"><img src="img/demo/consulta_instruccion_validar.jpg" class="img-nuevo-login"></span>	
+                <a href="img/demo/consulta_instruccion_validar.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+                						<a href="javascript:;" class="tooltips" style="left: 30px; top: 211px;" data-toggle="popover" title="" data-placement="right" data-content="En Mis Cartas el usuario podrá encontrar las Instrucciones por Aprobar, Aprobadas y Rechazadas.
+">1</a>
+                  <a href="javascript:;" class="tooltips" style="left: 880px; top: 204px;" data-toggle="popover" title="" data-placement="left" data-content="Gracias al sistema de filtros, será más fácil y rápido encontrar las Cartas deseadas.
+">2</a><a href="javascript:;" class="tooltips" style="left: 751px; top: 307px;" data-toggle="popover" title="" data-placement="left" data-content="Para ver el detalle de la instrucción, Aprobarla o Rechazarla, hay que hacer clic en la lupa
+">3</a>			
+
+
+                
+                </div>
+                <div class="span12">&nbsp;</div>
+            <p>Para Autorizar o Rechazar una Instrucción, el usuario tiene que hacer clic en el botón que aplique a la acción a realizar e ingresar la Clave del Dispositivo de Seguridad para finalizar el proceso.</p>    
+                
+			</div>
+				
+				<div class="span12">
+					<div class="content-img-demo">
+						<img src="img/demo/instruccion_autorizador02.jpg" class="img-nuevo-login">
+
+						<a href="img/demo/instruccion_autorizador02.jpg" target="_blank" alt="se abre en una nueva ventana"><img src="img-demo/ico-expand.png" class="ico-expand"></a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 260px; top: 23px;" data-toggle="popover" title="" data-placement="right" data-content="La primera ventana que se abre, es la que muestra el detalle de la Instrucción. Al final de la ventana se entregan las dos opciones de validación: Aprobar o Rechazar." data-original-title="">1</a>
+
+						<a href="javascript:;" class="tooltips hover" style="left: 581px; top: 25px;" data-toggle="popover" title="" data-placement="right" data-content="Al hacer clic en el botón Aprobar, se mostrará el campo de ingreso de la Clave del Dispositivo de Seguridad, y el botón Confirmar Autorización. Esta validación del Apoderado, está conectado al ILV. " data-original-title="">2</a>
+
+					<a href="javascript:;" class="tooltips hover" style="left: 880px; top: 22px;" data-toggle="popover" title="" data-placement="left" data-content="Al hacer clic en el botón Rechazar, se abrirá un campo en el que se puede especificar el por qué del rechazo, además del campo de ingreso de la Clave del Dispositivo de Seguridad, y el botón Confirmar Rechazo." data-original-title="">3</a></div>
+
+				<div class="content-btns-login">
+					<div class="span2">
+						<a href="index.html#funcionalidades-empresa"><img src="img-demo/btn-volver.png"></a>
+					</div>
+					<div class="span2 offset6">
+						<a href="#demo-1" class="transicion"><img src="img-demo/btn-anterior.png"></a>
+					</div>
+					<div class="span2">
+						<a href="#demo-3" class="transicion"><img src="img-demo/siguiente.png"></a>
+					</div>
+                    
+                    
+                    
+				</div>
+
+				<div class="span12">
+				<hr>
+				</div>
+
+			</div>
+		</div>
+		<!--//slide 2-->
+
+	  </div>
+		</div>
+        
+		<!--//slide 5-->
+	
+
+	</div> <!-- fin container -->
+	<a href="#" class="scrollToTop" title="Subir">
+      <span>Inicio</span>
+    </a>
+    
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
