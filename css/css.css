@@ -37,6 +37,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     background: #1b599e;
+    background: white;
     overflow-x: hidden;
     font-weight: normal;
 }
@@ -2226,4 +2227,32 @@ iframe h2.tituloh2 .small-comentarios {
 
 .row-tab.index{
     margin-top: 0;
+}
+
+.full-container-bottom {
+    width: 100%;
+    display: block;
+    background: #014282;
+}
+
+.full-container-bottom .container{
+    position: relative;
+}
+
+.full-container-bottom .container:after,
+.full-container-bottom .container:before{
+    content: "";
+    position: absolute;
+    background-color: #014282;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    display: block;
+}
+
+.full-container-bottom .container:after{
+    right: 0px;
+}
+.full-container-bottom .container:before{
+    left: 0px;
 }
