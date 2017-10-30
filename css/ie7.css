@@ -56,7 +56,11 @@ div#inicio.row #contenido > h3 {
 
 }
 
-.content-navbar .nav { margin-left: 130px; }
+.content-navbar .nav {
+    /*
+    margin-left: 130px; */
+    margin-left: 0px;
+}
 
 .container #inicio #boton #botondos {
 
@@ -66,10 +70,21 @@ div#inicio.row #contenido > h3 {
 
 
 #imagen{
-  margin-top: 0;
+    /*
+  margin-top: 0; */
+margin-top: -33px;
+  }
+
+#imagen p{
+    line-height: 40px;
   }
 
 #inicio + #funcionalidades-empresa {
   margin-top: 69px;
 
 }
+
+.ie7-config-tc{
+    padding-bottom: 8px;
+}
+

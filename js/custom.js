@@ -21,7 +21,7 @@ $(document).ready(function(){
     $('[data-toggle="popover"]').popover({
     	html : 'true',
         trigger: 'hover'
-    	
+
     });
 
 //    $('body').on('click', function (e) {
@@ -40,7 +40,7 @@ $(document).ready(function(){
 	    }, 500);
 	    return false;
 	})
-   
+
     //scrollTop
     $(window).scroll(function(){
         if ($(this).scrollTop() > 100) {
@@ -49,7 +49,7 @@ $(document).ready(function(){
             $('.scrollToTop').fadeOut();
         }
     });
-    
+
     //Click event to scroll to top
     $('.scrollToTop').click(function(){
         $('html, body').animate({scrollTop : 0},800);
@@ -63,7 +63,7 @@ $(document).ready(function(){
         }, 500);
 
 $('#box-link').each(function() {
-   
+
 var timesRun = 0;
 var interval = setInterval(function(){
     timesRun += 1;
@@ -71,12 +71,12 @@ var interval = setInterval(function(){
         clearInterval(interval);
     }
         if ($('#box-link').hasClass("blink") ) {
-      
+
             $( "#box-link" ).removeClass( "blink" );
         } else {
             $( "#box-link" ).addClass( "blink" );
-        }   
-}, 500);  
+        }
+}, 500);
 
 });
 
@@ -84,7 +84,7 @@ var interval = setInterval(function(){
 
 
 
-    });   
+    });
 
 
 
@@ -103,9 +103,13 @@ var interval = setInterval(function(){
 	//console.log(location.hash);
     location.hash && $(location.hash + '.collapse').collapse('show');
 
-    $(".myBoxUrl").click(function() {
-      window.location = $(this).find("a.urlLink").attr("href"); 
+    $(".myBoxUrl").click(function(e) {
+      window.location = $(this).find("a.urlLink").attr("href");
       return false;
+    });
+    
+    $(".myBoxUrl>a").click(function(e) {
+        e.stopPropagation();
     });
 
     //Tabs
@@ -115,13 +119,13 @@ var interval = setInterval(function(){
       $(this).tab('show');
     });
 
-  
+
 
 
 
 $( ".bt-link" ).click(function() {
 
- //  $( ".box-link" ).slideToggle( "slow", function() {});  
+ //  $( ".box-link" ).slideToggle( "slow", function() {});
 });
 
 
@@ -132,13 +136,13 @@ $( ".bt-link" ).click(function() {
     var visited = $.cookie("visited")
 
 
-    //if (visited == null) {
+    if (visited == null) {
 
-        $('.help_layer').show();
-        $.cookie('visited', 'yes'); 
-        //alert($.cookie("visited"));          
-    //}
-    
+       $('.help_layer').show();
+        $.cookie('visited', 'yes');
+      //  alert($.cookie("visited"));
+    }
+
     // set cookie
     $.cookie('visited', 'yes', { expires: 1, path: '/' });
     $('.btn-comenzar').click(function(){

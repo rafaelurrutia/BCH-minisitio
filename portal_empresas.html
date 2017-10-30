@@ -1,77 +1,113 @@
 <!DOCTYPE html>
 <!--[if lt IE 9]>        <html class="ie-old"> <![endif]-->
-<!--[if !IE]><!--> <html> <!--<![endif]-->
-  <head>
-	<title>Banco de Chile</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-	<!-- Bootstrap -->
-	<link href="css/bootstrap.css" rel="stylesheet" media="screen">
-	<link href="css/css.css" rel="stylesheet" media="screen">
-	<meta charset="UTF-8">
-	<!--[if lt IE 8]>
+<!--[if !IE]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <title>Banco de Chile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="css/css.css" rel="stylesheet" media="screen">
+    <meta charset="UTF-8">
+    <!--[if lt IE 8]>
 	<link href="css/ie7.css" rel="stylesheet" media="screen">
 	<![endif]-->
-  </head>
+</head>
 
-  
 
-  <body data-spy="scroll" data-target=".navbar" class="index-empresa">
-	<!-- Google Tag Manager -->
-	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W7SC73"
+
+<body data-spy="scroll" data-target=".navbar" id="top">
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W7SC73"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-W7SC73');</script>
-	<!-- End Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W7SC73');
 
-<div class="full-container-top">
-	    <div class="container">
-	        <div class="content-navbar">
-			  <div class="navbar">
-				<div class="navbar-inner ">
-			    <a class="brand" href="#"><img src="img/logo.png" width="260"></a>
-   			      <ul class="nav">
-			      <li><a href="index.html">Inicio</a></li>
-			      <li><a href="portal_personas.html">Portal Personas</a></li>
-			      <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal Empresas</a>
-			        <ul class="dropdown-menu">
-			          <li><a href="portal_empresas.html" class="up">Portal Empresa</a></li>
-			          <li><a href="portal_interno.html" class="up">Portal Interno</a></li>
-			          <li><a href="documento.html" class="up">Documentos</a></li>
-		            </ul>
-		          </li>
-			      <li><a href="nuestro_proyecto.html">Nuestro Proyecto</a></li>
-			      <li><a href="comentarios.html">Contáctanos&nbsp;&nbsp;&nbsp;<img src="img/ico-maletin.png"></a></li>
-			      <li><a href="preguntas_frecuentes.html">&nbsp;<img src="img/ico-pregunta-menu.png"></a></li>
-			      </ul>                
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!--    <div class="help_layer banconexion" style="display: block;">-->
+    <div class="help_layer banconexion" style="">
+        <div class="content_help_layer">
+            <img class="btn-modal close-modal" src="./img/empresa/boletin/icon-close.png" alt="">
+            <p>Conoce las noticias mensuales de Banconexion 2.0 </p>
+            <a href="novedades.html" class="btn">Aquí</a>
+        </div>
+    </div>
+    <div class="full-container-top">
+        <div class="container">
+            <div class="content-navbar">
+                <div class="navbar">
+                    <div class="navbar-inner ">
+                        <a class="brand" href="#"><img src="img/logo.png" width="260"></a>
+                        <ul class="nav">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="portal_personas.html">Portal Personas</a></li>
+                            <li class="dropdown active"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Banconexión 2.0</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="portal_empresas.html" class="up">Banconexión 2.0</a></li>
+                                    <li><a href="portal_interno.html" class="up">Portal Interno</a></li>
+                                    <li><a href="documento.html" class="up">Documentos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="nuestro_proyecto.html">Nuestro Proyecto</a></li>
+
+                            <li class=“child-comentanos” style="background-color:#EE5F00"><a href="capacitate.html">Contáctanos&nbsp;&nbsp;&nbsp;<img src="img/ico-maletin.png"></a></li>
+                            <!-- <li><a href="preguntas_frecuentes.html">F.A.Q&nbsp;&nbsp;<img src="img/ico-pregunta-menu.png"></a></li> -->
+                            <li class="faq"><a href="preguntas_frecuentes.html">Preguntas<br>Frecuentes&nbsp;&nbsp;<img src="img/ico-pregunta-menu.png"></a></li>
+                        </ul>
+                    </div>
                 </div>
-			  </div><!-- fin navbar -->
-	  </div>
-	    </div>
-	</div>
+                <!-- fin navbar -->
+            </div>
+        </div>
+    </div>
 
-<div class="seccion-botones">
-<div class="container">
-    <ul class="links-horizontales">
-<!--        <li><a href="">Contáctanos</a></li>-->
-        <li><a href="documento.html">¿Necesitas un documento?</a></li>
-        <li><a id="bottom-go" href="#demo-2">Conoce las nuevas funcionalidades</a></li>
-        <li><a href="">Capacitate en Banconexiones Pro</a></li>
-    </ul>
-</div>
-</div>
-    
+    <div class="seccion-botones">
+        <div class="container">
+            <ul class="links-horizontales">
+                <!--        <li><a href="">Contáctanos</a></li>-->
+                <li><a href="documento.html">¿Necesitas un documento?</a></li>
+                <li><a id="bottom-go" href="#demo-2">Conoce las nuevas funcionalidades</a></li>
+                <li><a href="novedades.html">Novedades</a></li>
+                <!--
+                <li><a class="padd" href="capacitate.html"></a></li>
+                -->
+            </ul>
+        </div>
+    </div>
+
     <div class="seccion-bienvenido">
-    <div class="container">
-    <div class="banner-text">
-        <h3>Bienvenido al minisitio de</h3>
-    <img src="./img/banconexion.png" alt="" width="400" height="86">
-        </div></div>
-</div>
-    
+        <div class="container">
+            <div class="banner-text">
+                <h3 style="margin-bottom:10px;">Bienvenido al minisitio de</h3>
+                <img src="./img/logo-banner-nuevo.png" alt="" width="270">
+                <p style="top:15px">Aquí podrás conocer toda la información sobre <br> el nuevo Portal Empresas del Banco de Chile. <br> ¡Vivamos juntos la mejor experiencia digital del mercado!</p>
+            </div>
+        </div>
+        <div class="banner-bottom">
+            <div class="container">
+                <span>Si tienes alguna duda sobre clientes y aplicaciones evíanos un correo a <a href="mailto:ayudabanconexionpro@bancochile.cl">ayudabanconexionpro@bancochile.cl</a></span>
+            </div>
+        </div>
+    </div>
+
     <div class="seccion-conoce">
         <div class="container">
             <div class="span6">
@@ -81,385 +117,486 @@
             </div>
             <div class="span6">
                 <img src="./img/empresa-foto-conoce-2.png" alt="" class="img-responsive">
-                <h4>Conoce Banconexión Pro</h4>
-                <a href="https://login.bancochile.cl/bancochile-web/empresa/login/index.html#/login">ver más</a>
+                <h4>Conoce Banconexión 2.0</h4>
+                <a href="presentacion/presentacion_banconexionpro.pdf" target="_blank" style="width:345px" download="presentacion_banconexionpro.pdf">ver más  <small>(descargar PDF para ver el video)</small></a>
             </div>
         </div>
     </div>
-    
-    <a class="seccion-novedades" href="#">
-       <div class="seccion-novedades-image"></div>
+
+    <a class="seccion-novedades" href="portal_empresas_novedades.html">
+        <div class="seccion-novedades-image"></div>
         <div class="container">
             <div class="span3">
                 <img src="./img/icon-novedades.png" alt="" width="52" height="46">
-            <h4>Novedades de<br>nuestro equipo</h4>
+                <h4>Avance de <br>Nuestros Proyectos</h4>
             </div>
         </div>
     </a>
 
-<div class="seccion-funcionalidades" id="demo-2">
-       
-       <div class="expand-tab-color">
-           <div class="container">
-            <!-- TAB -->
-			<ul class="nav nav-tabs padding-left-42 margin-nav-tabs nav-empresas" id="myTab">
-				<!-- MENU -->
-			  
-			 
-			  <li class="active"><a href="#empresa"> Portal Empresas </a></li>
-			  <li><a href="#interno"> Portal Interno </a></li>
-               <li><a href="documento.html"> Documentos</a></li>
-			  	<!-- FIN MENU -->
-			</ul>
-           </div>
-       </div>
-       
-    	<div class="container">
+    <div class="seccion-funcionalidades" id="demo-2">
+
+        <div class="expand-tab-color">
+            <div class="container">
+                <!-- TAB -->
+                <ul class="nav nav-tabs padding-left-42 margin-nav-tabs nav-empresas" id="myTab">
+                    <!-- MENU -->
 
 
-	  
-	  <!-- FUNCIONALIDADES -->
-	  	  <!-- FUNCIONALIDADES -->
-	  <div class="row" id="funcionalidades-empresa" >
+                    <li class="active"><a href="#empresa"> Banconexión 2.0 </a></li>
+                    <li><a href="#interno"> Portal Interno </a></li>
+                    <li><a href="documento.html"> Documentos</a></li>
+                    <!-- FIN MENU -->
+                </ul>
+            </div>
+        </div>
 
-		<!--// FIN CAJAS -->
-
-		<!-- CONTENEDOR TAB  -->
-		<div class="row-tab index">
-			
-			
-			 
-			<div class="tab-content display">
-
-				<!-- CONTENIDO 1 -->
-				 
-				<!--// FIN CONTENIDO 1 -->
+        <div class="container">
 
 
-				<!-- CONTENIDO 2 -->
-				<div class="tab-pane active" id="empresa">
 
-					<div class="span12" >
-						<h2 class="no-background">Funcionalidades Portal Empresas</h2>
-                         <ul class="breadcrumb">
-            <li><a href="index.html">Inicio BCH</a> <span class="divider">/</span></li>
-            <li class="active">Funcionalidades Portal Empresas</li>
-          </ul>
-						<p>En esta sección encontrarás todos los detalles y características de cada funcionalidad asociada al Portal Empresas, explicados de una manera simple y didáctica. Haz click en los íconos para acceder a los tutoriales.</p>
-					</div>
+            <!-- FUNCIONALIDADES -->
+            <!-- FUNCIONALIDADES -->
+            <div class="row" id="funcionalidades-empresa">
 
-					<div class="span12">
+                <!--// FIN CAJAS -->
 
-						<div class="content-funcionalidades">
+                <!-- CONTENEDOR TAB  -->
+                <div class="row-tab index">
 
-                        <!--PREFERENCIAS-->
-                            <div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-                                <a href="portal_empresas_tarjetas_credito.html" class="urlLink">
-                                
-									<div class="icon ico-tarjetas"></div></a>
-                                    
-									<br>
-									<a href="portal_empresas_tarjetas_credito.html" class="urlLink"><b>TARJETAS DE CRÉDITO</b></a>								
-								</div>
-							</div>
-                            <!--FIN PREFERENCIAS-->
-                            
-                            <div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-movimientos"></div>
-									<br>
-									<a href="portal_empresas_movimientos.html" class="urlLink"><b> CUENTAS </b></a> 					
-								</div>
-							</div>
-                            							<div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-l_credito"></div>
-									<br>
-									<a href="portal_empresas_linea_de_credito.html" class="urlLink"><b> LÍNEAS DE CRÉDITO</b></a> 					
-								</div>
-							</div>
 
-                           <!--TRANSFERENCIA FONDO-->
-							<div class="block-funcion2 text-center myBoxUrl">
-							  <div class="content-func-empresas">
-				<a href="portal_empresas_transferencias.html" class="urlLink">
-                
-                				<div class="icon ico-transferencias"></div></a>
-									<br>
-                                  <a href="portal_empresas_transferencias.html" class="urlLink"><b>TRANSFERENCIAS </b></a>	
-													
-								</div>
-							</div>
-                           
-                           <!--TRANSFERENCIA FONDO-->
-							<div class="block-funcion2 text-center myBoxUrl">
-							  <div class="content-func-empresas">
-				<a href="portal_empresas_pagos_masivos.html" class="urlLink">
-                
-                				<div class="icon ico-deposito_a_plazo"></div></a>
-									<br>
-                                  <a href="portal_empresas_pagos_masivos.html" class="urlLink"><b>PAGOS MASIVOS </b></a>	
-													
-								</div>
-							</div>
-                           
-                           <div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-doc"></div>
-									<br>
-									<a href="portal_empresas_cartas_instruccion.html" class="urlLink"><b> CARTAS DE INSTRUCCIÓN</b></a> 
-								</div>
-							</div>
-                            
-							<div class="block-funcion2 text-center myBoxUrl" >
-								<div class="content-func-empresas">
-									<div class="icon ico-login"></div>
-									<br>
-									<a href="portal_empresas_ingreso.html" class="urlLink"><b> INGRESO </b></a>								
-								</div>
-							</div>		  
-							<div class="block-funcion2 text-center  myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-home"></div>
-									<br>
-									<a href="portal_empresas_pagina_de_inicio.html" class="urlLink"><b> PÁGINA INICIO</b></a>								
-								</div>
-							</div>
-							<div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-perfil"></div>
-									<br>
-									<a href="portal_empresas_mi_perfil.html" class="urlLink"><b> MI PERFIL </b></a> 										
-								</div>
-							</div>
-                             <!--PREFERENCIAS-->
-                            <div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-                                <a href="portal_empresas_preferencias.html" class="urlLink">
-                                
-									<div class="icon ico-preferencias"></div></a>
-                                    
-									<br>
-									<a href="portal_empresas_preferencias.html" class="urlLink"><b>MIS PREFERENCIAS</b></a>								
-								</div>
-							</div>
-                            <!--FIN PREFERENCIAS-->
-                            
-                            
-                            
-                            <!--FIN TRANSFERENCIA FONDO-->
-							<div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-                                <a href="#" class="urlLink">
-                                
-									<div class="icon ico-registro"></div></a>
-                                    
-									<br>
-									<a href="#" class="urlLink"><b>ADMINISTRACIÓN</b></a>								
-								</div>
-							</div>
-							
-							
-						</div>
-						<br></br>
-                        <div class="span12">&nbsp;</div>
-					</div>
 
-					<!--<div class="span5" id="bajada-03">
-					  <p><a href="#documentos"><img src="img/brief-case.png"> Conoce y descarga los Documentos asociados</a> </p>
-					</div>-->
-					
-				</div><!--// FIN CONTENIDO 2 -->
+                    <div class="tab-content display">
 
-				<!-- CONTENIDO 3 -->
-				<div class="tab-pane" id="interno">
+                        <!-- CONTENIDO 1 -->
 
-					<!-- PORTAL INTERNO -->
-					<div class="row" id="funcionalidades-banco">
-						<div class="span12">
-						  <h2>Funcionalidades Portal Interno</h2>
-                           <ul class="breadcrumb">
-            <li><a href="index.html">Inicio BCH</a> <span class="divider">/</span></li>
-            <li class="active">Funcionalidades Portal Interno</li>
-          </ul>
-						  <p>El portal Interno es un sitio disponible para todos los colaboradores del Banco de Chile que realicen alguna función relacionada al Portal Empresa. Dentro de las acciones que se pueden realizar desde acá destacan Consultar Instrucción, Administración de usuarios y Bloqueo y activación de claves.</p>
-						</div>
+                        <!--// FIN CONTENIDO 1 -->
 
-						<div class="row">
-						    <div class="span12"></div>
-                            
-                            
+
+                        <!-- CONTENIDO 2 -->
+                        <div class="tab-pane active" id="empresa">
+
+                            <div class="span12">
+                                <h2 class="no-background">Funcionalidades Banconexión 2.0</h2>
+                                <ul class="breadcrumb">
+                                    <li><a href="index.html">Inicio BCH</a> <span class="divider">/</span></li>
+                                    <li class="active">Funcionalidades Banconexión 2.0</li>
+                                </ul>
+                                <p>En esta sección encontrarás todos los detalles y características de cada funcionalidad asociada al Banconexión 2.0, explicados de una manera simple y didáctica. Haz click en los íconos para acceder a los tutoriales.</p>
+                            </div>
+
                             <div class="span12">
 
-				<div class="content-funcionalidades">
+                                <div class="content-funcionalidades">
 
-				  <div class="block-funcion2 text-center myBoxUrl" >
-								<div class="content-func-empresas">
-									<div class="icon ico-check"></div>
-									<br>
-									<a href="portal_interno_ingreso_y_pagina_de_inicio.html" class="urlLink"><b> INGRESO Y PÁGINA DE INICIO</b></a>								
-								</div>
-							</div>		  
-							<div class="block-funcion2 text-center  myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-key"></div>
-									<br>
-									<a href="portal_interno_administracion_seguridad.html" class="urlLink"><b> ADMINISTRACIÓN <br>Y SEGURIDAD</b></a>								
-								</div>
-							</div>
-							<div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-activacion"></div>
+                                    <!--PREFERENCIAS-->
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseEight">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <a href="portal_empresas_tarjetas_credito.html" class="urlLink">
 
-									<br>
-									<a href="portal_interno_admin_empresas.html" class="urlLink"><b> ADMINISTRACIÓN DE EMPRESAS </b></a> 										
-								</div>
-							</div>
-				  <div class="block-funcion2 text-center myBoxUrl">
-								<div class="content-func-empresas">
-									<div class="icon ico-lock"></div>
-									<br>
-									<a href="portal_interno_activacion_bloqueo_clave.html" class="urlLink"><b> ACTIVACIÓN Y<br> BLOQUEO DE CLAVE</b></a> 
-								</div>
-					</div>
-						</div>
-                            
-                            
-                            <div class="span12">&nbsp;</div>
-                             <div class="span12">&nbsp;</div>
-                              <div class="span12">&nbsp;</div>
-                            
-                            
-                            
+                                                <div class="icon ico-tarjetas"></div>
+                                            </a>
+
+                                            <br>
+                                            <a href="portal_empresas_tarjetas_credito.html" class="urlLink"><b>TARJETAS DE CRÉDITO</b></a>
+                                        </div>
+                                    </div>
+                                    <!--FIN PREFERENCIAS-->
+
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseTwelve">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <div class="icon ico-movimientos"></div>
+                                            <br>
+                                            <a href="portal_empresas_movimientos.html" class="urlLink"><b> CUENTAS </b></a>
+                                        </div>
+                                    </div>
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseNine">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <div class="icon ico-l_credito"></div>
+                                            <br>
+                                            <a href="portal_empresas_linea_de_credito.html" class="urlLink"><b> LÍNEAS DE CRÉDITO</b></a>
+                                        </div>
+                                    </div>
+
+                                    <!--TRANSFERENCIA FONDO-->
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseTen">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <a href="portal_empresas_transferencias.html" class="urlLink">
+
+                                                <div class="icon ico-transferencias"></div>
+                                            </a>
+                                            <br>
+                                            <a href="portal_empresas_transferencias.html" class="urlLink"><b>TRANSFERENCIAS </b></a>
+
+                                        </div>
+                                    </div>
+
+                                    <!--TRANSFERENCIA FONDO-->
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseEleven">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <span class="parpadea text"><strong>Piloto</strong></span>
+                                        <div class="content-func-empresas">
+                                            <a href="portal_empresas_pagos_masivos.html" class="urlLink">
+
+                                                <div class="icon ico-deposito_a_plazo"></div>
+                                            </a>
+                                            <br>
+                                            <a href="portal_empresas_pagos_masivos.html" class="urlLink"><b>PAGOS</b></a>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseThirteen">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <div class="icon ico-doc"></div>
+                                            <br>
+                                            <a href="portal_empresas_cartas_instruccion.html" class="urlLink"><b> CARTAS DE INSTRUCCIÓN</b></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseFour">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <div class="icon ico-login"></div>
+                                            <br>
+                                            <a href="portal_empresas_ingreso.html" class="urlLink"><b> INGRESO </b></a>
+                                        </div>
+                                    </div>
+                                    <div class="block-funcion2 text-center  myBoxUrl">
+                                        <a href="template_preguntas.html#collapseFive">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <div class="icon ico-home"></div>
+                                            <br>
+                                            <a href="portal_empresas_pagina_de_inicio.html" class="urlLink"><b> PÁGINA INICIO</b></a>
+                                        </div>
+                                    </div>
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseSix">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <div class="icon ico-perfil"></div>
+                                            <br>
+                                            <a href="portal_empresas_mi_perfil.html" class="urlLink"><b> MI PERFIL </b></a>
+                                        </div>
+                                    </div>
+                                    <!--PREFERENCIAS-->
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseSeven">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <div class="content-func-empresas">
+                                            <a href="portal_empresas_preferencias.html" class="urlLink">
+
+                                                <div class="icon ico-preferencias"></div>
+                                            </a>
+
+                                            <br>
+                                            <a href="portal_empresas_preferencias.html" class="urlLink"><b>MIS PREFERENCIAS</b></a>
+                                        </div>
+                                    </div>
+                                    <!--FIN PREFERENCIAS-->
+
+
+
+                                    <!--FIN TRANSFERENCIA FONDO-->
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <span class="parpadea text"><strong>Piloto</strong></span>
+                                        <div class="content-func-empresas">
+                                            <a href="portal_empresas_administracion.html" class="urlLink">
+
+                                                <div class="icon ico-registro"></div>
+                                            </a>
+
+                                            <br>
+                                            <a href="portal_empresas_administracion.html" class="urlLink"><b>ADMINISTRACIÓN</b></a>
+                                        </div>
+                                    </div>
+
+
+                                    <!-- -->
+                                    <div class="block-funcion2 text-center myBoxUrl">
+                                        <a href="template_preguntas.html#collapseFifteen">
+                                            <img src="img/icon_preguntas_frecuentes.png" alt="">
+                                        </a>
+                                        <span class="parpadea text"><strong>Piloto</strong></span>
+                                        <div class="content-func-empresas">
+                                            <a href="template_preguntas.html#collapseFifteen" class="urlLink">
+
+                                                <div class="icon ico-doc"></div>
+                                            </a>
+                                            <br>
+                                            <a href="template_preguntas.html#collapseFifteen" class="urlLink"><b>RECAUDACIÓN</b></a>
+
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <br></br>
+                                <div class="span12">&nbsp;</div>
                             </div>
-                            
-                            
-						</div>
 
-						
+                            <!--<div class="span5" id="bajada-03">
+					  <p><a href="#documentos"><img src="img/brief-case.png"> Conoce y descarga los Documentos asociados</a> </p>
+					</div>-->
 
+                        </div>
+                        <!--// FIN CONTENIDO 2 -->
 
-						
+                        <!-- CONTENIDO 3 -->
+                        <div class="tab-pane" id="interno">
 
-						
-
-						
-
-
-						<!--<div class="span5" id="bajada-04">
-						    <p><a href="#documentos"><img src="img/brief-case2.png"> Conoce y descarga los Documentos asociados </a></p>
-						</div>-->
-
-						<!--<div class="span2 offset5">
-						    <a href="#comentanos" class="transicion">
-								<img src="img/siguiente-04.png" class="siguiente" id="siguiente-04">
-						    </a>
-						</div>-->
-
-					</div><!--// FIN PORTAL INTERNO -->
-
-					<!-- <div class="comentanos" id="comentanos">
-					<img src="img/ejemplo-con-guias.jpg">
-					</div> -->				
-
-				</div><!--// FIN CONTENIDO 3 -->				
-
-			</div><!--// FIN TAB -->
-
-		</div><!--// FIN CONTENEDOR TAB -->
-
-	  </div><!--// FIN FUNCIONALIDADES --><!--// FIN FUNCIONALIDADES -->
+                            <!-- PORTAL INTERNO -->
+                            <div id="funcionalidades-banco">
+                                <div class="span12">
+                                    <h2>Funcionalidades Portal Interno</h2>
+                                    <ul class="breadcrumb">
+                                        <li><a href="index.html">Inicio BCH</a> <span class="divider">/</span></li>
+                                        <li class="active">Funcionalidades Portal Interno</li>
+                                    </ul>
+                                    <p>El portal Interno es un sitio disponible para todos los colaboradores del Banco de Chile que realicen alguna función relacionada al Banconexión 2.0. Dentro de las acciones que se pueden realizar desde acá destacan Consultar Instrucción, Administración de usuarios y Bloqueo y activación de claves.</p>
+                                </div>
 
 
+                                <div class="span12"></div>
 
-	</div> <!-- fin container -->
-</div>
 
-<div class="full-container-bottom">
-    <div class="container">
-	    <div class="row" id="preguntas">
-	    <div class="span4 offset4">
-		  <img src="img/globo-bch.png">
-		</div>
+                                <div class="span12">
+                                    <!--
+                                        <div class="content-funcionalidades">
 
-		<div class="span2 offset2">
-		  <a href="#imagen" class="transicion"><img src="img/ir-inicio.png" id="ir-inicio"></a>
-		</div>
+                                            <div class="block-funcion2 text-center myBoxUrl">
+                                                <div class="content-func-empresas">
+                                                    <div class="icon ico-check"></div>
+                                                    <br>
+                                                    <a href="portal_interno_ingreso_y_pagina_de_inicio.html" class="urlLink"><b> INGRESO Y PÁGINA DE INICIO</b></a>
+                                                </div>
+                                            </div>
+                                            <div class="block-funcion2 text-center  myBoxUrl">
+                                                <div class="content-func-empresas">
+                                                    <div class="icon ico-key"></div>
+                                                    <br>
+                                                    <a href="portal_interno_administracion_seguridad.html" class="urlLink"><b> ADMINISTRACIÓN <br>Y SEGURIDAD</b></a>
+                                                </div>
+                                            </div>
+                                            <div class="block-funcion2 text-center myBoxUrl">
+                                                <div class="content-func-empresas">
+                                                    <div class="icon ico-activacion"></div>
 
-		<div class="span12">
-		  <hr>
-		</div>
+                                                    <br>
+                                                    <a href="portal_interno_admin_empresas.html" class="urlLink"><b> ADMINISTRACIÓN DE EMPRESAS </b></a>
+                                                </div>
+                                            </div>
+                                            <div class="block-funcion2 text-center myBoxUrl">
+                                                <div class="content-func-empresas">
+                                                    <div class="icon ico-lock"></div>
+                                                    <br>
+                                                    <a href="portal_interno_activacion_bloqueo_clave.html" class="urlLink"><b> ACTIVACIÓN Y<br> BLOQUEO DE CLAVE</b></a>
+                                                </div>
+                                            </div>
+                                        </div>
+-->
 
-		<div class="span8">
-		  <p class="footer-text">
-			Casa Matriz: Ahumada 251, Santiago de Chile | Mesa Central: +56 2 26531111 <br>
-			Políticas de Privacidad y Seguridad. | Código de Conducta y Buenas Prácticas de Bancos e Instituciones Financieras. <br>
-			Guía del Cliente Bancario SBIF.
-		  </p>
-		</div>
+                                    <div class="content-funcionalidades">
 
-		<div class="span3 offset1">
-		  <!--img src="img/img-fonobank.png" class="pull-right"-->
-		</div>		
+                                        <div class="block-funcion2 text-center myBoxUrl">
+                                            <div class="content-func-empresas">
+                                                <div class="icon ico-check"></div>
+                                                <br>
+                                                <a href="portal_interno_ingreso.html" class="urlLink"><b> INGRESO</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="block-funcion2 text-center myBoxUrl">
+                                            <div class="content-func-empresas">
+                                                <div class="icon ico-home"></div>
+                                                <br>
+                                                <a href="portal_interno_pagina_de_inicio.html" class="urlLink"><b> PÁGINA DE INICIO</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="block-funcion2 text-center myBoxUrl">
+                                            <div class="content-func-empresas">
+                                                <div class="icon ico-doc"></div>
+                                                <br>
+                                                <a href="portal_interno_instrucciones.html" class="urlLink"><b> INSTRUCCIONES</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="block-funcion2 text-center myBoxUrl">
+                                            <div class="content-func-empresas">
+                                                <div class="icon ico-registro"></div>
 
-	  </div>
-	  </div>
-	</div>
-	
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	
-	<script>
-        
-		$(document).ready(function(){
-            
-            
+                                                <br>
+                                                <a href="portal_interno_administracion_empresa.html" class="urlLink"><b> ADMINISTRACIÓN DE EMPRESAS</b></a>
+                                            </div>
+                                        </div>
+                                        <div class="block-funcion2 text-center myBoxUrl">
+                                            <div class="content-func-empresas">
+                                                <div class="icon ico-registro"></div>
 
-			/*$('.dropdown-menu li').click(function(){
-				var contar =  $('.dropdown-menu li').each();
-				console.log(contar);
-			})*/
-            
-            $('#bottom-go').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 500);
-    return false;
-});
-            
-            
+                                                <br>
+                                                <a href="portal_interno_administracion_usuario.html" class="urlLink"><b> ADMINISTRACIÓN DE USUARIO</b></a>
+                                            </div>
+                                        </div>
 
-			$('.dropdown-menu li:nth-child(1) a').click(function(){
-				$('ul.nav-tabs li').removeClass('active');
-				$('ul.nav-tabs li:nth-child(1) ').addClass('active');
-				$('.tab-pane').removeClass('active');
-				$('.tab-pane:nth-child(1)').addClass('active');
-			});
-			$('.dropdown-menu li:nth-child(2) a').click(function(){
-				$('ul.nav-tabs li').removeClass('active');
-				$('ul.nav-tabs li:nth-child(2) ').addClass('active');
-				$('.tab-pane').removeClass('active');
-				$('.tab-pane:nth-child(2)').addClass('active');
-			});
-			$('.dropdown-menu li:nth-child(3) a').click(function(){
-				$('ul.nav-tabs li').removeClass('active');
-				$('ul.nav-tabs li:nth-child(3) ').addClass('active');
-				$('.tab-pane').removeClass('active');
-				$('.tab-pane:nth-child(3)').addClass('active');
-			});
+                                        <div class="block-funcion2 text-center myBoxUrl">
+                                            <div class="content-func-empresas">
+                                                <div class="icon ico-lock"></div>
+                                                <br>
+                                                <a href="portal_interno_activacion_desbloqueo_clave.html" class="urlLink"><b> ACTIVACIÓN Y <br>DESBLOQUEO DE CLAVE</b></a>
+                                            </div>
+                                        </div>
 
-			$('.dropdown-menu li a').click(function(){
-				$(this).parent().parent().parent().removeClass('open');
+                                        <div class="block-funcion2 text-center myBoxUrl">
+                                            <div class="content-func-empresas">
+                                                <div class="icon ico-deposito_a_plazo"></div>
+                                                <br>
+                                                <a href="portal_interno_condiciones_comerciales.html" class="urlLink"><b> CONDICIONES <br>COMERCIALES</b></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span12">&nbsp;</div>
+                                    <div class="span12">&nbsp;</div>
+                                    <div class="span12">&nbsp;</div>
 
-			})
-		});
 
-	</script>
 
-	<script src="js/custom.js"></script>
-      <script type="text/javascript" src="js/jquery.cookie.js"></script>
-    
+                                </div>
 
-  </body>
+
+                            </div>
+
+
+
+                            <!--// FIN PORTAL INTERNO -->
+
+
+                        </div>
+                        <!--// FIN CONTENIDO 3 -->
+
+                    </div>
+                    <!--// FIN TAB -->
+
+                </div>
+                <!--// FIN CONTENEDOR TAB -->
+
+            </div>
+            <!--// FIN FUNCIONALIDADES -->
+            <!--// FIN FUNCIONALIDADES -->
+
+
+
+        </div>
+        <!-- fin container -->
+    </div>
+
+    <div class="full-container-bottom">
+        <div class="container">
+            <div class="row" id="preguntas">
+
+
+
+
+                <div class="span4 offset4">
+                    <img src="img/globo-bch.png">
+                </div>
+
+                <div class="span2 offset2">
+                    <a href="#top" class="transicion"><img src="img/ir-inicio.png" id="ir-inicio"></a>
+                </div>
+
+                <div class="span12">
+                    <hr>
+                </div>
+
+                <div class="span8">
+                    <p class="footer-text">
+                        Casa Matriz: Ahumada 251, Santiago de Chile | Mesa Central: +56 2 26531111 <br> Políticas de Privacidad y Seguridad. | Código de Conducta y Buenas Prácticas de Bancos e Instituciones Financieras. <br> Guía del Cliente Bancario SBIF.
+                    </p>
+                </div>
+
+                <div class="span3 offset1">
+                    <!--img src="img/img-fonobank.png" class="pull-right"-->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+
+            /*$('.dropdown-menu li').click(function(){
+            	var contar =  $('.dropdown-menu li').each();
+            	console.log(contar);
+            })*/
+            $('#bottom-go').click(function() {
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500);
+                return false;
+            });
+
+            $('.dropdown-menu li:nth-child(1) a').click(function() {
+                $('ul.nav-tabs li').removeClass('active');
+                $('ul.nav-tabs li:nth-child(1) ').addClass('active');
+                $('.tab-pane').removeClass('active');
+                $('.tab-pane:nth-child(1)').addClass('active');
+            });
+            $('.dropdown-menu li:nth-child(2) a').click(function() {
+                $('ul.nav-tabs li').removeClass('active');
+                $('ul.nav-tabs li:nth-child(2) ').addClass('active');
+                $('.tab-pane').removeClass('active');
+                $('.tab-pane:nth-child(2)').addClass('active');
+            });
+            $('.dropdown-menu li:nth-child(3) a').click(function() {
+                $('ul.nav-tabs li').removeClass('active');
+                $('ul.nav-tabs li:nth-child(3) ').addClass('active');
+                $('.tab-pane').removeClass('active');
+                $('.tab-pane:nth-child(3)').addClass('active');
+            });
+
+            $('.dropdown-menu li a').click(function() {
+                $(this).parent().parent().parent().removeClass('open');
+
+            });
+
+            $('.banconexion').delay(1000).fadeIn('slow');
+
+            $('.btn-modal').click(function(e) {
+                e.preventDefault();
+                $('.help_layer').fadeOut(300);
+            });
+
+        });
+
+    </script>
+
+    <script src="js/custom.js"></script>
+
+</body>
+
 </html>

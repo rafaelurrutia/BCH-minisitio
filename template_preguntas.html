@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Banco de Chile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
@@ -9,468 +10,1129 @@
     <link href="css/demo.css" rel="stylesheet" media="screen">
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="css/css.css" rel="stylesheet" media="screen">
-    
+
     <!--[if lt IE 8]>
     <link href="css/ie7.css" rel="stylesheet" media="screen">
     <![endif]-->
     <meta charset="UTF-8">
-  </head>
-  <body data-spy="scroll" data-target=".navbar">
+
+    <style>
+        .accordion-inner>ul>li>ul {
+            list-style-type: disc;
+        }
+
+        .accordion-inner>ul>li>ul>li {
+            color: #878787;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-W7SC73"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-W7SC73');</script>
-    <!-- End Google Tag Manager -->
-    
-      
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W7SC73');
 
+    </script>
+    <!-- End Google Tag Manager -->
 
     <div class="full-container-top">
-	    <div class="container">
-	        <div class="content-navbar">
-			  <div class="navbar">
-				<div class="navbar-inner ">
-			    <a class="brand" href="#"><img src="img/logo.png" width="260"></a>
-   			      <ul class="nav">
-			      <li><a href="index.html">Inicio</a></li>
-			      <li><a href="portal_personas.html">Portal Personas</a></li>
-			      <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portal Empresas</a>
-			        <ul class="dropdown-menu">
-			          <li><a href="portal_empresas.html" class="up">Portal Empresa</a></li>
-			          <li><a href="portal_interno.html" class="up">Portal Interno</a></li>
-			          <li><a href="documento.html" class="up">Documentos</a></li>
-		            </ul>
-		          </li>
-			      <li><a href="nuestro_proyecto.html">Nuestro Proyecto</a></li>
-			      <li><a href="comentarios.html">Contáctanos&nbsp;&nbsp;&nbsp;<img src="img/ico-maletin.png"></a></li>
-			      <li class="active"><a href="preguntas_frecuentes.html">&nbsp;<img src="img/ico-pregunta-menu.png"></a></li>
-			      </ul>                
+        <div class="container">
+            <div class="content-navbar">
+                <div class="navbar">
+                    <div class="navbar-inner">
+                        <a class="brand" href="#"><img src="img/logo.png" width="260"></a>
+                        <ul class="nav">
+                            <li><a href="index.html">Inicio</a></li>
+                            <li><a href="portal_personas.html">Portal Personas</a></li>
+                            <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Banconexión 2.0</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="portal_empresas.html" class="up">Banconexión 2.0</a></li>
+                                    <li><a href="portal_interno.html" class="up">Portal Interno</a></li>
+                                    <li><a href="documento.html" class="up">Documento</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="nuestro_proyecto.html">Nuestro Proyecto</a></li>
+
+                            <li class=“child-comentanos” style="background-color:#EE5F00"><a href="capacitate.html">Contáctanos&nbsp;&nbsp;&nbsp;<img src="img/ico-maletin.png"></a></li>
+                            <!--			      <li class="active"><a href="preguntas_frecuentes.html">F.A.Q&nbsp;&nbsp;<img src="img/ico-pregunta-menu.png"></a></li>-->
+                            <li class="faq active"><a href="preguntas_frecuentes.html">Preguntas<br>Frecuentes&nbsp;&nbsp;<img src="img/ico-pregunta-menu.png"></a></li>
+                        </ul>
+                    </div>
                 </div>
-			  </div><!-- fin navbar -->
-	  </div>
-	    </div>
-	</div>
-
-	<div class="container container-preguntas">
-
-      <div class="row preguntas" id="preguntas-1">
-        <div class="span12 preguntas-content-1">
-          <h2><span>Preguntas frecuentes - Portal Empresas</span></h2>
-          <ul class="breadcrumb">
-            <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a> <span class="divider">/</span></li>
-            <li class="active">Portal Empresas</li>
-          </ul>
-       
+                <!-- fin navbar -->
+            </div>
         </div>
-      </div>
+    </div>
 
-      <div class="row">
-        <div class="span12">
-          <div class="accordion" id="accordion1">
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
-                <strong>I.  Login – Ingreso </strong></a>
-              </div>
-              <div id="collapseOne" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <ul>
-                    <li>
-                      <p><b class="pregunta">1.  ¿Por qué el Cliente no puede ingresar a la Nueva Internet con sus cuentas de Empresas?</b></p>
-                      <p>El Nuevo Portal integra el módulo de selección de Empresas dentro de la página privada. Una vez habiendo ingresado al Home de la nueva Internet Empresas, el cliente puede cambiar de manera simple y rápida de una empresa a otra.
-                      </p>
-                    </li>
 
-                    <br>
+    <div class="container container-preguntas">
 
-                    <li>
-                      <p><b class="pregunta">2.  Si el cliente no posee clave, ¿Cómo y dónde la solicita?</b></p>
-                      <p>En el login debe ingresar a la opción Solicitud de Clave, disponible en la esquina inferior derecha del cuadro de ingreso a la Nueva Internet Empresas. Para generar esa nueva clave, el usuario tiene que definir si se trata de un Cliente Banconexión o no y luego ingrsar los datos requeridos (RUT, RUT Empresa y Clave Banconexión, o RUT, Celular y Correo Electrónico, respectivamente).
-                      </p>
-                    </li>
+        <div class="row preguntas" id="preguntas-1">
+            <div class="span12 preguntas-content-1">
+                <h2><span>Preguntas frecuentes - Banconexión 2.0</span></h2>
+                <ul class="breadcrumb">
+                    <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a> <span class="divider">/</span></li>
+                    <li class="active">Banconexión 2.0</li>
+                </ul>
 
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">3.  El cliente olvidó su clave, ¿Cómo la recupera?</b></p>
-                      <p>
-                      En el login debe ingresar a la opción Olvido de Clave, disponible en la esquina inferior izquierda del cuadro de ingreso a la Nueva Internet Empresas. Para crear una nueva clave, el cliente tiene que ingresar su RUT y la clave de la Tarjeta de Débito. Luego ingresar la nueva Clave e ingresar los datos de su Dispositivo de Seguridad.
-                      
-                      </p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">4. El cliente bloqueó la clave de la Nueva Internet Empresas, ¿Qué debe hacer para desbloquearla?</b></p>
-                      <p>Si se le bloquea la clave de la Nueva Internet Empresas, le aparecerá una opción para Reactivarla (ingresar ahí si recuerda la clave) u Olvido de Clave (ingresar ahí si no la recuerda, deberá generar una nueva). En ambos casos, se le exigirá al cliente la clave de su dispositivo de seguridad.
-                      </p>
-                    </li>
-
-                    <br>
-
-                    
-                  </ul>
-                </div>
-              </div>
             </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
-                <strong>II. Página Resumen (Home) </strong></a>
-              </div>
-              <div id="collapseTwo" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <ul>
-                    <li>
-                      <p><b class="pregunta">1. ¿Qué son los íconos bajo el carrusel y por qué aparecen?, ¿son administrables?</b></p>
-                      <p>Los íconos son parte de las nuevas funcionalidades de la Nueva Internet Empresas. Éstos son completamente administrables por el cliente, que puede definir que secciones mostrar y en qué orden. Para esto hay que ingresar a Mi Perfil > Modificar mis datos > Opciones > Mis Preferencias.
-                      </p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">2. El cliente necesita información sobre su Ejecutivo Banca Empresas. ¿Dónde puede encontrarla?</b></p>
-                      <p>En el menú Centro de Ayuda se ha dispuesto la información, personalizada para cada usuario, que muestra los datos (nombre, teléfono, correo electrónico y sucursal) del Ejecutivo(a) Banca Empresas.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">3. El cliente necesita información sobre sus últimos accesos al Portal. ¿Dónde puede encontrarla?”</b></p>
-                      <p>La funcionalidad Últimos Accesos muestra de manera clara las últimas 3 conexiones al portal, con la fecha y hora de la misma. Para ingresar, tiene que hacer clic en el nombre del usuario (esquina superior derecha de la página). Ahí se abrirá un menú, dentro del cual se encuentra el acceso a la funcionalidad.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">4.  El cliente necesita información de contacto del área de Servicio al Cliente. ¿Dónde puede encontrarla?</b></p>
-                      <p>En el menú Centro de Ayuda se han dispuesto los teléfonos de contacto de Servicio al Cliente.</p>
-                    </li>
-
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">5.  El cliente necesita revisar otras empresas. ¿Cómo y dónde puede cambiar esta selección?</b></p>
-                      <p>Bajo el Header se muestra el menú principal, desde el que se puede ingresar a los diferentes servicios y productos a los que tenga acceso, dependiendo de su perfil de usuario. Al lado derecho del menú, se encuentra el selector de empresa. Haciendo clic en esa funcionalidad, se abrirá la lista de empresas disponibles y la opción de seleccionar la que desee</p>
-                    </li>
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">6. El menú no muestra todos los productos/servicios del cliente. ¿Por qué?</b></p>
-                      <p>Dependiendo de los permisos de usuario que tenga, se mostrarán las secciones correspondientes.</p>
-                    </li>
-                    <br>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
-                <strong>III. Mi Perfil </strong></a>
-              </div>
-              <div id="collapseThree" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <ul>  
-                    <li>
-                      <p><b class="pregunta">1. ¿Cómo puede un cliente cambiar las claves de acceso a la Nueva Internet Empresas?</b></p>
-                      <p>Al ingresar a la Nueva Internet Empresas, desde el menú Mi Perfil > Datos Personales > Clave de acceso al Portal, puede cambiar la clave de inicio de sesión a la Nueva Internet Empresas.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">2.  El cliente tiene un un nuevo dispositivo de seguridad ¿Cómo lo activa?</b></p>
-                      <p>Para activar el dispositivo de seguridad, hay que ingresar a Mi Perfil > Modificar Mis Datos > Clave de Acceso al Portal y hacer clic en el botón Administrar Dispositivos, dentro del módulo Dispositivo de Seguridad. Ahí se dará la opción de Activar, Bloquear o Desbloquear el dispositivo de seguridad en 3 simples pasos.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">3.  El cliente extravió si dispositivo de seguridad ¿Cómo lo puede bloquear?</b></p>
-                      <p>Para bloquear el dispositivo de seguridad, hay que ingresar a Mi Perfil > Modificar Mis Datos > Clave de Acceso al Portal y hacer clic en el botón Administrar Dispositivos, dentro del módulo Dispositivo de Seguridad. Ahí se dará la opción de Activar, Bloquear o Desbloquear el dispositivo de seguridad en 3 simples pasos.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">4.  El cliente encontró su dispositivo de seguridad ¿Puede desbloquearlo?</b></p>
-                      <p>Sí. Para desbloquear el dispositivo de seguridad, hay que ingresar a Mi Perfil > Modificar Mis Datos > Clave de Acceso al Portal y hacer clic en el botón Administrar Dispositivos, dentro del módulo Dispositivo de Seguridad. Ahí se dará la opción de Activar, Bloquear o Desbloquear el dispositivo de seguridad en 3 simples pasos.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">5. ¿Cómo puede el cliente actualizar sus datos?</b></p>
-                      <p>Al ingresar a la Nueva Internet Empresas, desde el menú Mi Perfil > Datos Personales > Modificar mis datos, puede modificar sus datos particulares y comerciales. Además puedes agregar una imagen para personalizar aún más su página privada.</p>
-                    </li>
-
-                    <br>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-<div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
-                <strong>IV. Tarjeta de Crédito</strong></a>
-              </div>
-              <div id="collapseFour" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <ul>
-                    <li>
-                      <p><b class="pregunta">1. ¿Puedo obtener el estado de cuenta desde la Nueva Internet Empresas?</b></p>
-                      <p>Sí. Dentro de la sección Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados. Solo tiene que hacer clic en el botón de descarga “Estado de Cuenta”, en la esquina superior derecha de la tabla, y seleccionar la Tarjeta de Crédito (Nacional o Internacional) y el mes a consultar.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">2. ¿El cliente puede obtener un comprobante de un movimiento en particular?</b></p>
-                      <p>Sí. Dentro de la sección Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados puede revisar cada uno de los movimientos, de manera muy simple y rápida. Cada uno de los elementos presentados poseen la opción ver el detalle de cada transacción y la posibilidad de ver el comprobante y, además, puede descargarlo.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">3. ¿Qué puede hacer el cliente si no está de acuerdo con un cargo detectado en su Tarjeta de Crédito?</b></p>
-                      <p>Si hay algún movimiento con el que no está de acuerdo o le produce algún tipo de duda, la Nueva Internet Empresas integra una nueva funcionalidad que le dará la posibilidad de enviar una solicitud de aclaración del movimiento, sin necesidad de ir a una sucursal, ahorrándole tiempo. La funcionalidad “Solicitar Aclaración” se encuentra en de la sección Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados, dentro del detalle del movimiento.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">4.  ¿Puedo el cliente, descargar los movimientos de su Tarjeta de Crédito?</b></p>
-                      <p>Sí. Puede descargar tanto los movimientos Facturados como los No Facturados de la tarjeta Nacional e Internacional en formato Excel o PDF. Solo tiene que hacer clic en el ícono de descarga, en la esquina superior derecha de la tabla, dentro de Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados o Productos > Tarjeta de Crédito > Consultar > Movimientos No Facturados.</p>
-                    </li>
-
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">5. ¿Puede el cliente descargar un movimiento de su Tarjeta de Crédito de seis meses atrás?</b></p>
-                      <p>Sí. El histórico de las Tarjetas de Crédito es de hasta 12 meses.</p>
-                    </li>
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">6. Si el usuario utiliza su Tarjeta de Crédito, ¿Se ve reflejado de inmediato el movimiento en el Nuevo Portal??</b></p>
-                      <p>Sí, ya que las operaciones están en línea con Transbank.</p>
-                    </li>
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">7. ¿Puede el cliente realizar Transacciones mediante Tarjeta de Crédito?</b></p>
-                      <p>Por el momento, no está disponible esa opción.</p>
-                    </li>
-                    <br>
-                    
-                    
-                    <li>
-                      <p><b class="pregunta">8. El cliente olvidó el Pinpass, ¿Cómo recupera la clave u obtiene una nueva?</b></p>
-                      <p>Dentro del menú Productos > Tarjeta de Crédito > Configurar > PinPass, se puede crear una nueva clave Pinpass, en dos simples pasos.</p>
-                    </li>
-                    <br>
-                    
-                  </ul>
-                </div>
-              </div>
-              </div>
-              <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
-                <strong>V. Cartas de Instrucción</strong></a>
-              </div>
-              <div id="collapseFive" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <ul>
-                    <li>
-                      <p><b class="pregunta">1. El cliente inscribió una instrucción, pero con error. ¿Puede modificarla?</b></p>
-                      <p>Sí. Una de las opciones al ingresar a Consultar Inscripción es la de editar. También se puede eliminar.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">2. Existen plantillas para inscribir cartas de instrucción o solo es posible cargar desde un archivo?</b></p>
-                      <p>Sí, existen diversas plantillas para inscribir Cartas de Instrucción. Las más utilizadas son: Transferencia de Fondos a otros Bancos vía SPAV, Transferencia de Fondos, Compra y Venta de Moneda Spot, Envío Orden de Pago al Exterior, entre otras.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">3. El cliente está inscribiendo una Instrucción en euros, pero la conversión en pesos aparece en otra moneda.</b></p>
-                      <p>En este caso el cliente está utilizando una cuenta de cargo en otra moneda. Por ejemplo, si está realizando una operación en Euros, pero la cuenta de cargo es en dólares, la conversión la realizará en dólares. Si cambia la cuenta a una en Euros, la conversión será en Pesos Chilenos.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">4. ¿Los horarios de corte para las transacciones son los mismos que hoy en día maneja el cliente?</b></p>
-                      <p>Sí, el horario de corte es el mismo que hoy en día conoce el cliente: 14.30 horas.</p>
-                    </li>
-
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">5. ¿Una Instrucción realizada por Nueva Internet es más rápida que una manual?</b></p>
-                      <p>Sí. La Nueva Internet tiene prioridad por sobre las operaciones manuales que realicen los clientes, ya sea vía mesón o vía email al Ejecutivo de Cuenta.</p>
-                    </li>
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">6. ¿Cuánto debe pesar un archivo PDF que suba el Cliente?</b></p>
-                      <p>Cómo Máximo debe pesar 1 MB. Cuando se trabaja con un PDF, el sistema pide identificar a las personas que aparecen firmando el documento físico mediante la selección de autorizadores.</p>
-                    </li>
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">7. Si cliente presenta problemas técnicos de operación con alguna categoría, ¿con quién debo escalarlo?</b></p>
-                      <p>Para las categorías de Compra y venta de moneda y Orden de pago al exterior con Paula Hinojosa. Para Transferencia de Fondos vía SPAV, SOMA y CCLV, con Ricardo Estay. Para Transferencia mismo Banco, Juan Carlos Acosta. Para Custodia y comisiones de Confianza, César Aravena.</p>
-                    </li>
-                    <br>
-                    
-                    
-                    <li>
-                      <p><b class="pregunta">8. Si el cliente presenta problemas para Inscribir o Autorizar Instrucciones, ¿qué debo hacer?</b></p>
-                      <p>Se debe ir a la opción Desbloqueo Clave por Olvido, luego se debe ingresar RUT del cliente y verificar si tiene las atribuciones y revisar el detalle de los permisos para el cliente en cada empresa que tenga asignada</p>
-                    </li>
-                    <br>
-                    
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-           <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
-                <strong>VI. Transferencias y Pagos</strong></a>
-              </div>
-              <div id="collapseSix" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <ul>
-                    <li>
-                      <p><b class="pregunta">1. Solo puedo agregar transferencias, pero no Inscribir o Autorizar. ¿Por qué?</b></p>
-                      <p>Dependiendo de los permisos de usuario que tenga, se mostrarán las secciones correspondientes.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">2. Tengo que agregar transferencia para 20 beneficiarios. ¿Hay que agregarlas una a una?</b></p>
-                      <p>No. El Portal presenta la opción de agregar transferencias masivas, con hasta 30 Beneficiarios.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">3. El cliente tiene que Inscribir una transferencia, pero tiene errores, ¿Es posible editarla?.</b></p>
-                      <p>Sí. El cliente que cuenta con el perfil de Inscriptor, puede editar la transferencia que tiene errores. También la puede eliminar.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">4. El cliente tiene que Autorizar una transferencia, pero tiene errores, ¿Es posible editarla?</b></p>
-                      <p>No. En este caso el cliente no puede editar la Transferencia, pero puede enviarla a reparar o eliminarla.</p>
-                    </li>
-
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">5. ¿Puedo consultar la bitácora de las transferencias realizadas?</b></p>
-                      <p>Sí. Desde el menú Pagos y Transferencias > Transferencias > Consultar > Consulta de Transferencias el cliente puede revisar la bitácora, los comentarios, archivos adjuntos y comprobante, además de poder descargar el detalle de la transferencia.</p>
-                    </li>
-                    <br>
-                    
-                    <li>
-                      <p><b class="pregunta">6. ¿Puedo descargar el comprobante de alguna de las transferencias realizadas?</b></p>
-                      <p>Sí. Desde el menú Pagos y Transferencias > Transferencias > Consultar > Consulta de Transferencias el cliente puede descargar el comprobante de una Transferencia realizada.</p>
-                    </li>
-                    <br>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-group">
-              <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSeven">
-                <strong>VII. Cuentas</strong></a>
-              </div>
-              <div id="collapseSeven" class="accordion-body collapse">
-                <div class="accordion-inner">
-                  <ul>
-                    <li>
-                      <p><b class="pregunta">1. El cliente tiene dudas con un movimiento de su cuenta corriente, ¿Qué puede hacer?</b></p>
-                      <p>Si hay algún movimiento con el que el cliente no está de acuerdo o le produce algún tipo de duda, la Nueva Internet Empresas integra una nueva funcionalidad que le dará al usuario la posibilidad de enviar una solicitud de aclaración de movimiento, sin necesidad de ir a una sucursal. La funcionalidad “Solicitar Aclaración” se encuentra en la sección Productos > Cuentas > Consultar > Saldos y Movimientos, dentro del detalle del movimiento.</p>
-                    </li>
-
-                    <br>
-
-                    <li>
-                      <p><b class="pregunta">2. ¿Puede el cliente obtener la información de todas sus cuentas corrientes, de manera consolidada?</b></p>
-                      <p>Sí. La Nueva Internet Empresas le proporciona al cliente el módulo Saldos Consolidados, que le da la opción de seleccionar dos o más Cuentas Corrientes y analizar los Saldos y Retenciones consolidadas de esas cuentas.</p>
-                    </li>
-
-                    <br>
-
-                  </ul>
-                </div>
-              </div>
-            </div>
-            
-
-          </div>
         </div>
-        <div class="span12">
-            <a href="index.html#preguntas"><img src="img/btn-volver-preguntas.png" class="docs-volver"></a>
-        </div>
-      </div>
 
-    </div> <!-- fin container -->
+        <div class="row">
+            <div class="span12">
+                <div class="accordion" id="accordion1">
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                                <strong>I.  Generales </strong></a>
+                        </div>
+                        <div id="collapseOne" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1.  ¿Qué es Banconexión 2.0?</b></p>
+                                        <p>Banconexión 2.0 es una plataforma multiempresa con los más altos estándares de seguridad, simple, personalizada y con diversas funcionalidades.
+                                        </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2.  ¿Afectará Banconexión 2.0 el uso diario de Banconexión?</b></p>
+                                        <p>No, ambas plataformas operarán de manera paralela hasta que todos los módulos de Banconexión se trasladen a Banconexión 2.0. Se avisará por sitio privado y por Fonobank.
+                                        </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3.  ¿Banconexión 2.0 funciona en todos los navegadores?</b></p>
+                                        <p>
+                                            Sí, la plataforma funciona con todos los navegadores: Firefox, Safari, Google Chrome e Internet Explorer (v 9.0 superior).
+                                        </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4. ¿Cómo se puede crear un usuario?</b></p>
+                                        <p>Para crear un usuario y hasta que comience a funcionar el sistema de Autoadministración, usted deberá completar el Anexo 2.
+                                        </p>
+                                    </li>
+
+                                    <br>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo">
+                                <strong>II. Contratos y Anexos </strong></a>
+                        </div>
+                        <div id="collapseTwo" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Qué atribuciones deberá tener el firmante del contrato?</b></p>
+                                        <p>Los firmantes del contrato deberán tener Facultad 2.0 o 2.1.
+                                        </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. ¿Cuál es el plazo máximo que tiene la empresa para enviar el contrato firmado?</b></p>
+                                        <p>El ejecutivo de Cuentas debe asegurarse que el cliente envíe el contrato firmado lo antes posible.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. ¿Quién debe firmar el anexo 1 “Designación de administradores”?”</b></p>
+                                        <p>Si es sin delegación de usuarios o administradores, los firmantes del anexo deben tener Facultad 2.0 o 2.1.</p>
+                                        <p>Si es con delegación de usuarios o administradores, los firmantes del anexo deben tener Facultad 2.0 o 2.1. El contrato también debe estar firmado con las mismas Facultades.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4.  ¿Quién debe formar anexo 2, “Designación de usuarios” y anexo 3, “Modificación de usuarios”?</b></p>
+                                        <p>Los firmantes que concurren en el anexo deben tener Facultad 2.0 o 2.1. Cabe aclarar que en los anexos 2 o 3 solo se pueden informar usuarios, no delegar usuarios. Para este último caso, se necesita un informe poder (ILV) o que el cliente lo haga en la plataforma con un usuario con atribución de giro y delegación de sus Facultades.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5.  ¿Quién debe firmar el anexo 4, “Eliminación de usuarios”?</b></p>
+                                        <p>El anexo 4 no requiere facultades específicas.</p>
+                                    </li>
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">6. ¿Quién debe firmar el anexo 5, “Tarifas de servicios especiales”?</b></p>
+                                        <p>Los firmantes que concurren en el anexo deben tener Facultad 2.0 0 2.1.</p>
+                                    </li>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree">
+                                <strong>III. Dispositivos de Seguridad </strong></a>
+                        </div>
+                        <div id="collapseThree" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Qué debe hacer el cliente en caso de necesitar un digipass?</b></p>
+                                        <p>Si necesita un digipass, debe contactarse con su ejecutivo y solicitarle uno nuevo. El dispositivo deberá ser retirado en el mesón de la sucursal del Banco de Chile más cercano. </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2.  ¿Le sirve al usuario los dispositivos de seguridad que ya utiliza como cliente? </b></p>
+                                        <p>Si, para operar en Banconexión 2.0 le sirven los dispositivos de seguridad que ya tiene activados pues estos pueden ser sincronizados.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3.  El cliente extravió si dispositivo de seguridad ¿Cómo lo puede bloquear?</b></p>
+                                        <p>Para bloquear el dispositivo de seguridad, hay que ingresar a Mi Perfil > Modificar Mis Datos > Clave de Acceso al Portal y hacer clic en el botón Administrar Dispositivos, dentro del módulo Dispositivo de Seguridad. Ahí se dará la opción de Activar, Bloquear o Desbloquear el dispositivo de seguridad en 3 simples pasos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4.  El cliente encontró su dispositivo de seguridad ¿Puede desbloquearlo?</b></p>
+                                        <p>Sí. Para desbloquear el dispositivo de seguridad, hay que ingresar a Mi Perfil > Modificar Mis Datos > Clave de Acceso al Portal y hacer clic en el botón Administrar Dispositivos, dentro del módulo Dispositivo de Seguridad. Ahí se dará la opción de Activar, Bloquear o Desbloquear el dispositivo de seguridad en 3 simples pasos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5. ¿Cómo puede el cliente actualizar sus datos?</b></p>
+                                        <p>Al ingresar a la Nueva Internet Empresas, desde el menú Mi Perfil > Datos Personales > Modificar mis datos, puede modificar sus datos particulares y comerciales. Además puedes agregar una imagen para personalizar aún más su página privada.</p>
+                                    </li>
+
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFour">
+                                <strong>IV. Ingreso a la Plataforma y Clave</strong></a>
+                        </div>
+                        <div id="collapseFour" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Cómo se ingresa al portal?</b></p>
+                                        <p>Parta acceder al portal, el usuario debe ingresar al link .</p> <a href="http://portalempresas.bancochile.cl/empresa"><i>portalempresas.bancochile.cl/empresa</i></a>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. ¿Por qué se debe ingresar al portal solo con el RUT de usuario y no con el RUT de la empresa?</b></p>
+                                        <p>Banconexión 2.0 es una plataforma multiempresa, ya que usted podrá seleccionar la empresa con la que desea operar (en el caso de que esté ingresado en más de una).
+                                        </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. ¿La clave de ingreso a  Banconexión 2.0  funciona para todos los portales del Banco?</b></p>
+                                        <p>No, la clave de la nueva plataforma no cambiará la que ya posee en los otros portales, pero podría ser podría la misma si esta cumple con las políticas de seguridad.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4.  ¿Qué se debe hacer si la clave de ingreso a Banconexión 2.0 está bloqueada?</b></p>
+                                        <p>Si la clave de ingreso a Banconexión 2.0 está bloqueada, debe llamar al servicio Post Venta, Fonobank —desde red fija (600) 637 3838 y desde celulares +56 2 2637 3838—, y comenzar su proceso de activación</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5. ¿Por qué al activar la clave sale este mensaje? Fonobank</b></p>
+
+                                        <div>
+                                            <div class="content-img-demo">
+                                                <img src="img/demo/emp_preg_frecuentes-1.png" class="img-nuevo-login" width="100%">
+                                            </div>
+                                        </div>
+
+                                        <p>El mensaje aparece si usted no ha creado la clave para su ingreso al portal, por eso lo primero que debe hacer es crear dicha contraseña.
+                                        </p>
+                                    </li>
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">6. ¿Qué debe hacer el cliente si en el Primer Login el sistema no le  permite ingresar al portal y aparece el siguiente mensaje? Fonobank</b></p>
+
+                                        <div>
+                                            <div class="content-img-demo">
+                                                <img src="img/demo/emp_preg_frecuentes-2.png" class="img-nuevo-login" width="100%">
+                                            </div>
+                                        </div>
+
+                                        <p>Si le aparece este mensaje es porque falta información en algún campo de SIEBEL o porque su digipass no está sincronizado.</p>
+                                    </li>
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">7. ¿Cómo puede el cliente cambiar su clave?</b></p>
+                                        <p>Para cambiar su clave, debe acceder al portal e ingresar a <i>Editar Perfil>Datos de Seguridad> Cambio de Clave</i>. Para completar el proceso, el sistema le pedirá digitar la clave de su dispositivo de seguridad.
+                                        </p>
+                                    </li>
+                                    <br>
+
+
+                                    <li>
+                                        <p><b class="pregunta">8. Si el cliente no posee clave, ¿cómo y dónde la solicita?</b></p>
+                                        <p>En el Login debe ingresar a la opción Solicitud de Clave, disponible en la esquina inferior derecha del cuadro de ingreso a Banconexión 2.0. El usuario puede generar esa nueva contraseña utilizando la clave de Banconexión, la clave del Folio Cliente Nuevo (personas que no son Cliente Empresa), la clave Banco en Línea Pyme (solo Cliente Empresa) o llamando al 224681800.</p>
+                                    </li>
+                                    <br>
+                                    <li>
+                                        <p><b class="pregunta">9. El cliente olvidó su clave, ¿cómo la recupera?</b></p>
+                                        <p>En el Login debe ingresar a la opción Olvido de Clave, disponible en la esquina inferior izquierda del cuadro de ingreso a Banconexión 2.0. Para crear una nueva clave, el cliente tiene que ingresar su RUT y la clave de su Tarjeta de Débito, si es que posee alguna. Luego, deberá digitar la nueva clave e ingresar los datos de su dispositivo de seguridad.</p>
+                                    </li>
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">10. El cliente bloqueó la clave de Banconexión 2.0, ¿qué debe hacer para desbloquearla?</b></p>
+                                        <p>Si se le bloquea la contraseña de Banconexión 2.0, le aparecerá una opción para Reactivarla (ingresar ahí si recuerda la clave). Si olvidó la clave, el usuario deberá seleccionar el botón Olvido de Clave y generar una nueva. En ambos casos, se le exigirá al cliente la clave de su dispositivo de seguridad.</p>
+                                    </li>
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFive">
+                                <strong>V. Página Inicio</strong></a>
+                        </div>
+                        <div id="collapseFive" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Qué son los íconos bajo el mensaje de bienvenida y por qué aparecen?, ¿son administrables?</b></p>
+                                        <p>Los íconos son parte de las nuevas funcionalidades de Banconexión 2.0. Éstos son completamente administrables por el cliente, quien puede definir qué secciones mostrar y en qué orden. Para esto hay que tiene que hacer clic en el nombre del usuario (esquina superior derecha de la página) y seleccionar la opción Preferencias.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. El cliente necesita información sobre su Ejecutivo Banca Empresas. ¿Dónde puede encontrarla?</b></p>
+                                        <p>En el menú Centro de Ayuda se ha dispuesto la información, personalizada para cada usuario, que muestra los datos (nombre, teléfono, correo electrónico y sucursal) del Ejecutivo Banca Empresas.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. El cliente necesita información sobre sus últimos accesos al Portal. ¿Dónde puede encontrarla?</b></p>
+                                        <p>La funcionalidad Últimos Accesos muestra de manera clara las últimas tres conexiones al Portal, con la fecha y hora de la misma. Para ingresar, tiene que hacer clic en el nombre del usuario (esquina superior derecha de la página) y seleccionar la opción Últimos Accesos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4. El cliente necesita información de contacto del área de Servicio al Cliente. ¿Dónde puede encontrarla?</b></p>
+                                        <p>En el menú Centro de Ayuda se han dispuesto los teléfonos de contacto de Servicio al Cliente.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5. El cliente necesita revisar otras empresas. ¿Cómo y dónde puede cambiar esta selección?</b></p>
+                                        <p>En la esquina inferior izquierda del Header, se encuentra el Selector de Empresas, que despliega la lista de empresas disponibles y permite al usuario seleccionar la que desee.</p>
+                                    </li>
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">6. El menú no muestra todos los productos/servicios del cliente ¿Por qué?</b></p>
+                                        <p>Dependiendo de los permisos que el usuario tenga, se mostrarán las secciones correspondientes.</p>
+                                    </li>
+                                    <br>
+
+
+
+
+                                    <div class="span12">&nbsp;</div>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSix">
+                                <strong>VI. Mi Perfil</strong></a>
+                        </div>
+                        <div id="collapseSix" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Cómo puede un cliente cambiar las claves de acceso a Banconexión 2.0?</b></p>
+                                        <p>El usuario puede cambiar su clave de acceso al Portal ingresando a Mi Perfil > Datos de Seguridad > Cambio Clave. Allí deberá digitar su actual contraseña, su nueva contraseña y finalmente la clave de su dispositivo de seguridad. </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. El cliente tiene un nuevo dispositivo de seguridad ¿Cómo lo activa?</b></p>
+                                        <p>Para activar el dispositivo de seguridad, hay que ingresar a <i>Mi Perfil > Datos de Seguridad > Dispositivo de Seguridad</i>. Allí podrá activar, bloquear o desbloquear su dispositivo de seguridad en tres simples pasos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. ¿Cómo puede el cliente actualizar sus datos?</b></p>
+                                        <p>El usuario puede modificar sus datos ingresando a <i>Mi Perfil > Datos Personales</i>. Allí podrá editar su información particular y comercial. Además, podrá agregar una imagen para personalizar su página privada.</p>
+                                    </li>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseSeven">
+                                <strong>VII. Mis Preferencias</strong></a>
+                        </div>
+                        <div id="collapseSeven" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Cómo se pueden configurar las Preferencias que aparecen en la Página de Inicio?</b></p>
+                                        <p>Para configurar los accesos de directos que se visualizan en el Cuerpo de la Página, el cliente debe hacer clic en su nombre de usuario y seleccionar la opción Preferencias. Allí podrá definir manualmente las secciones más utilizadas y su respectiva posición en la pantalla. Así, el usuario ahorra tiempo al revisar sus productos, realizar transacciones y pagos, y gestionar sus inversiones. </p>
+                                    </li>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseEight">
+                                <strong>VIII. Tarjeta de Crédito</strong></a>
+                        </div>
+                        <div id="collapseEight" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Puedo obtener el estado de cuenta desde Banconexión 2.0?</b></p>
+                                        <p>Sí. Dentro de la sección <i>Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados</i>. Solo tiene que hacer clic en el botón de descarga “Estado de Cuenta”, que se encuentra en la esquina superior derecha de la tabla, y seleccionar la Tarjeta de Crédito (Nacional o Internacional) y el mes a consultar.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. ¿El cliente puede obtener un comprobante de un movimiento en particular?</b></p>
+                                        <p>Sí. Dentro de la sección <i>Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados</i> puede revisar cada los movimientos. Cada uno de los elementos presentados tiene la opción de ver el detalle de cada transacción y descargar el comprobante.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. ¿Qué puede hacer el cliente si no está de acuerdo con un cargo detectado en su Tarjeta de Crédito?</b></p>
+                                        <p>Si hay algún movimiento con el que no está de acuerdo o le produce algún tipo de duda, Banconexión 2.0 integra una nueva funcionalidad que le dará la posibilidad de enviar una solicitud de Aclaración del Movimiento, sin necesidad de ir a una sucursal. La opción Solicitar Aclaración se encuentra en la sección <i>Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados</i>, dentro del detalle del movimiento.
+                                        </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4. ¿Puedo el cliente, descargar los movimientos de su Tarjeta de Crédito? </b></p>
+                                        <p>Sí. El usuario puede descargar tanto los movimientos Facturados como los No Facturados de la Tarjeta Nacional e Internacional. Solo tiene que hacer clic en el ícono de descarga, en la esquina superior derecha de la tabla, dentro de <i>Productos > Tarjeta de Crédito > Consultar > Movimientos Facturados o Productos > Tarjeta de Crédito > Consultar > Movimientos No Facturados</i>.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5. ¿Puede el cliente descargar un movimiento de su Tarjeta de Crédito de seis meses atrás?</b></p>
+                                        <p>Sí. El histórico de las Tarjetas de Crédito es de hasta 12 meses.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">6. Si el usuario utiliza su Tarjeta de Crédito, ¿se ve reflejado de inmediato el movimiento en el Nuevo Portal?</b></p>
+                                        <p>Sí, porque las operaciones están en línea con Transbank.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">7. El cliente olvidó su pinpass, ¿cómo recupera la clave u obtiene una nueva?</b></p>
+                                        <p>Dentro del menú <i>Productos > Tarjeta de Crédito > Configurar > PinPass</i>, se puede crear una nueva clave, en dos simples pasos.</p>
+                                    </li>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseNine">
+                                <strong>IX. Línea de Crédito</strong></a>
+                        </div>
+                        <div id="collapseNine" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿El cliente puede obtener un comprobante de un movimiento en particular?</b></p>
+                                        <p>Sí. Dentro de la sección Productos > Línea de Crédito > Saldos y Movimientos puede revisar cada los movimientos. Cada uno de los elementos presentados tiene la opción de ver el detalle de cada transacción y descargar el comprobante.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. Si el usuario utiliza su Línea de Crédito, ¿se ve reflejado de inmediato el movimiento en el Nuevo Portal?</b></p>
+                                        <p>Sí, porque las operaciones están en línea con Transbank.</p>
+                                    </li>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTen">
+                                <strong>X. Transferencias</strong></a>
+                        </div>
+                        <div id="collapseTen" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. El cliente solo puede agregar transferencias, pero no inscribir o autorizar. ¿Por qué?</b></p>
+                                        <p>Dependiendo de los permisos de usuario que tenga, se mostrarán las secciones correspondientes.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. El cliente tiene que agregar transferencia para 20 beneficiarios., ¿hay que agregarlas una a una?</b></p>
+                                        <p>No. El Portal presenta la opción de agregar transferencias masivas, con hasta 30 Beneficiarios.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. El cliente tiene que inscribir una transferencia, pero tiene errores, ¿es posible editarla?
+</b></p>
+                                        <p>Sí. El cliente que tenga el rol Inscriptor, puede editar la transferencia errónea. Además, la puede eliminar.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4. El cliente tiene que autorizar una transferencia, pero tiene errores, ¿es posible editarla?</b></p>
+                                        <p>No. En este caso el cliente no puede editar la transferencia, pero puede enviarla a reparar o eliminarla.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5. ¿Puede el cliente consultar la bitácora de las transferencias realizadas?</b></p>
+                                        <p>Sí. Desde el menú <i>Pagos y Transferencias > Transferencias > Consultar > Consulta de Transferencias</i> el cliente puede revisar la bitácora, los comentarios, archivos adjuntos y comprobante. Además, tiene la opción de descargar el detalle de la transferencia.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">6. ¿Puede el cliente descargar el comprobante de alguna de las transferencias realizadas?</b></p>
+                                        <p>Sí. Desde el menú <i>Pagos y Transferencias > Transferencias > Consultar > Consulta de Transferencias</i> el cliente puede descargar el comprobante de una transferencia realizada. </p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">7. La plataforma entrega algún mensaje de error cuando un usuario no cuenta con las facultades para aprobar una TEF?</b></p>
+                                        <p>No. Si el apoderado no tiene facultades y tiene el rol para autorizar, al validar en ILV no va a contar su firma, por lo que la TEF quedará auto pendiente.</p>
+                                    </li>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseEleven">
+                                <strong>XI. Pagos Masivos</strong></a>
+                        </div>
+                        <div id="collapseEleven" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Qué tipo de Pagos Masivos se pueden hacer en Banconexión 2.0?</b></p>
+                                        <p>En el Portal se pueden realizar remuneraciones, pago a proveedores, pensiones y otros Pagos Masivos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. ¿Cuántos tipos de Pago de remuneraciones se pueden realizar en el Portal?</b></p>
+                                        <p>Banconexión 2.0 permite realizar las siguientes remuneraciones: de anticipo, honorarios, sueldos, horas extras, reliquidaciones, rol privado, viáticos, premios, aguinaldos, gratificaciones, comisiones y bonos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. ¿Cuántos tipos de Pago a proveedores se pueden realizar en el Portal?</b></p>
+                                        <p>En Banconexión 2.0 se pueden realizar los siguientes Pagos a proveedores: proveedores, proveedores factoring, de bienes, notas débito, bienes nota débito, bienes nota de crédito, bienes nota débito, bienes factura, notas créditos, factura, de servicios, de servicios nota débito, de servicios nota créditos y de servicios factura.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4. ¿Cómo se realiza un Pago Masivo en el nuevo Portal?</b></p>
+                                        <p>Banconexión 2.0 permite que el cliente envíe Nóminas de Pago Masivo —ya sea por archivo o digitación— de manera segura y eficiente. A través de este sistema digital, se perfecciona el proceso de pago entre el Banco y los clientes, optimizando los desembolsos asociados a remuneraciones, proveedores, pensiones y otros masivos que las empresas deseen realizar.</p>
+                                        <p>Para que sea procesado por el Banco, el proceso de un Pago Masivo comienza cuando se agrega una Nómina de Pago. Luego ésta se inscribe y posteriormente se autoriza. De manera opcional —y al igual que las Transferencias—, se pueden agregar las funciones Liberar Pagos y Pagos Express.</p>
+                                    </li>
+
+                                    <br>
+
+
+                                    <li>
+                                        <p><b class="pregunta">5. ¿Qué es un Pago Express?</b></p>
+                                        <p>El Pago Express es una nueva opción que permite realizar una transacción de manera rápida y se ejecuta de la misma forma que la función Agregar una Nómina, tanto para Nómina por archivo como por digitalización. Realizando un Pago Express, el cliente puede saltarse los cuatro pasos anteriores: Agregar, Inscribir, Autorizar y Liberar una Nómina. </p>
+                                    </li>
+
+                                    <br>
+
+
+                                    <li>
+                                        <p><b class="pregunta">6. ¿Cómo se agrega una Nómina de Pago Masivo?</b></p>
+                                        <p>Una Nómina de Pago Masivo se puede agregar por archivo (masivo) o por digitación (uno a uno).</p>
+                                        <p>Si es por archivo, el cliente debe establecer el convenio, el tipo de pago, el tipo de plantilla, el nombre de la Nómina, el método de provisión y la modalidad de ingreso. Luego, debe subir el archivo y seleccionar el botón Agregar. El archivo no puede superar los 70 MB y se puede descargar desde la misma página. </p>
+                                        <p>Si es por digitación, el cliente debe ingresar el convenio, el tipo de pago, la fecha de pago, el nombre de la Nómina, el método de provisión y la modalidad de ingreso. Luego, debe digitar los datos del beneficiario y de forma opcional, el detalle del documento.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">7. ¿Qué métodos de provisión existen para las Nóminas de Pago Masivo?</b></p>
+                                        <p>Existen dos tipos de provisión: por Nómina completa o por registros aceptados.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">8. ¿Qué tipo de plantilla se utiliza para Agregar una Nómina por archivo?</b></p>
+                                        <p>Para Agregar una Nómina por archivo, se utiliza la plantilla 400, que se puede descargar desde la misma página.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">9. ¿Pueden reutilizarse las Nóminas?</b></p>
+                                        <p>Sí, las Nóminas se pueden reutilizar. Para eso hay que ingresar al Módulo de Consulta y seleccionar el ícono Tuerca en la tabla. Desde allí, se desplegará un menú con la opción Reutilizar.</p>
+                                    </li>
+
+                                    <br>
+
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwelve">
+                                <strong>XII. Cuentas</strong></a>
+                        </div>
+                        <div id="collapseTwelve" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. El cliente tiene dudas con un movimiento de su cuenta corriente, ¿qué puede hacer?</b></p>
+                                        <p>Si hay algún movimiento con el que no está de acuerdo o le produce algún tipo de duda, Banconexión 2.0 integra una nueva funcionalidad que le dará la posibilidad de enviar una solicitud de Aclaración del Movimiento, sin necesidad de ir a una sucursal. La opción Solicitar Aclaración se encuentra en la sección <i>Productos > Cuentas > Consultar > Saldos y Movimientos</i>, dentro del detalle del movimiento.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. ¿Puede el cliente obtener la información de todas sus cuentas corrientes, de manera consolidada?</b></p>
+                                        <p>Sí, Banconexión 2.0 le proporciona al cliente el módulo Saldos Consolidados, que le da la opción de seleccionar dos o más cuentas corrientes y analizar los Saldos y las Retenciones consolidadas de esas cuentas.</p>
+                                    </li>
+
+                                    <br>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseThirteen">
+                                <strong>XIII. Instrucciones</strong></a>
+                        </div>
+                        <div id="collapseThirteen" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. El cliente llama consultando que no puede autorizar ni inscribir Cartas de Instrucción, ¿qué debo hacer?</b></p>
+                                        <p>Se debe ingresar al Portal Interno, y luego ir a la opción Administración y Seguridad/Administración de Usuario. Luego, debe ir a la opción Búsqueda Avanzada y digitar el RUT de la empresa y el RUT del usuario que está llamando.</p>
+
+                                        <div>
+                                            <div class="content-img-demo">
+                                                <img src="img/demo/emp_preg_frecuentes-3.png" class="img-nuevo-login" width="100%">
+                                            </div>
+                                        </div>
+                                        <p>El cliente deberá hacer clic en el ícono Tuerca y seleccionar la opción Aplicaciones. Allí podrá visualizar los roles y aplicaciones que tiene el usuario en la empresa asociada.</p>
+
+                                        <div>
+                                            <div class="content-img-demo">
+                                                <img src="img/demo/emp_preg_frecuentes-4.png" class="img-nuevo-login" width="100%">
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. El cliente inscribió una Instrucción, pero con error, ¿puede modificarla?</b></p>
+                                        <p>Sí. Una de las opciones al ingresar a Consultar Inscripción es la de editar. También se puede eliminar.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. ¿Existen plantillas para inscribir Cartas de Instrucción o solo es posible cargar desde un archivo?</b></p>
+                                        <p>Sí, existen diversas plantillas para inscribir Cartas de Instrucción. Las más utilizadas son: Transferencia de Fondos a otros Bancos vía SPAV, Transferencia de Fondos, Compra y Venta de Moneda Spot, Envío Orden de Pago al Exterior, Boleta de Garantía contra Línea de Crédito y Depósitos a Plazo.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4. El cliente está inscribiendo una Instrucción en euros, pero la conversión en pesos aparece en otra moneda.</b></p>
+                                        <p>En este caso el cliente está utilizando una cuenta de cargo en otra moneda. Por ejemplo, si está realizando una operación en euros, pero la cuenta de cargo es en dólares, la conversión la realizará en dólares. Si cambia la cuenta a una en euros, la conversión será en pesos chilenos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5. ¿Una Instrucción realizada por Banconexión 2.0 es más rápida que una manual? </b></p>
+                                        <p>Sí. Banconexión 2.0 tiene prioridad sobre las operaciones manuales que realicen los clientes, ya sea vía mesón o vía mail al Ejecutivo de Cuenta.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">6. ¿Cuánto debe pesar el archivo PDF que suba el cliente?</b></p>
+                                        <p>El archivo debe pesar como máximo 1 MB. Cuando se trabaja con un PDF, el sistema pide identificar a las personas que aparecen firmando el documento físico, mediante la selección de autorizadores.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">7. Si cliente presenta problemas técnicos de operación con alguna categoría, y no puedo solucionarlo, ¿con quién debo escalarlo?</b></p>
+                                        <p>Los casos que no puedan ser resueltos deben ser derivados a Mauricio Pino, Gonzalo Collarte y Cristián León vía correo electrónico. Se le debe solicitar al cliente que envíe una captura de pantalla para tener claridad exacta del problema.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">8. ¿La descarga del Swift y/o Liquidación Comex está disponible en el portal?</b></p>
+                                        <p>Si, ambos documentos se pueden descargar en el portal, siempre y cuando sean Instrucciones inscritas mediante plantilla.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">9. ¿Se puede descargar la copia del Swift (enviado copia a 5 destinatarios) o el comprobante de liquidación de una carta subida en formato PDF?</b></p>
+                                        <p>No. El beneficio antes descrito solo es válido para el uso de plantilla prediseñada. Sí un cliente pregunta por qué no puede ver esto, hay que asegurarse que esté operando vía plantilla prediseñada.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">10. ¿Se puede adjuntar la declaración jurada para una orden de pago al exterior 20500?</b></p>
+                                        <p>Sí, se debe adjuntar en el mismo archivo PDF, al final de la última página de la carta escaneada.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">11. ¿Puedo bloquear a un usuario para que no pueda hacer más transacciones en Banconexión 2.0? </b></p>
+                                        <p>Sí, puede bloquearlo en seleccionando la opción Bloquear usuario del menú que se despliega tras hacer clic en el ícono Tuerca.</p>
+                                        <div>
+                                            <div class="content-img-demo">
+                                                <img src="img/demo/emp_preg_frecuentes-5.png" class="img-nuevo-login" width="100%">
+                                            </div>
+                                        </div>
+                                        <p>&nbsp;</p>
+                                        <div>
+                                            <div class="content-img-demo">
+                                                <img src="img/demo/emp_preg_frecuentes-6.png" class="img-nuevo-login" width="100%">
+                                            </div>
+                                        </div>
+                                        <p>Se debe justificar el bloqueo al usuario.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">12. Cuándo el cliente manda un archivo en formato PDF, ¿el sistema lee el ILV?</b></p>
+                                        <p>No, cuando el cliente manda un archivo en formato PDF, el sistema no lee el ILV. Esto se aplica solo para plantilla. El PDF viaja directo a visado, donde se aplican los controles correspondientes.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">13. Si me aparece un mensaje que menciona las “Facultades”, ¿cuál es el error? </b></p>
+                                        <p>La mayoría de las veces, la aparición del mensaje significa que la actualización del ILV no está funcionado. Si usted tiene este problema, debe reportarlo a su ejecutivo de Cuenta, y al equipo de Cobertura.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">14. ¿Toda operación en Banconexión 2.0 pasa por el ILV?</b></p>
+                                        <p>No, las cartas de instrucción vía PDF y las TEF no pasan por ILV.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">15. ¿Hasta qué hora se puede inscribir una Carta de Instrucción? </b></p>
+                                        <p>Para que sea ejecutada el mismo día, una carta de Instrucción debe inscribirse o autorizarse máximo hasta las 14.30 horas.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">16. ¿Cómo puede el cliente revisar en qué parte del proceso está  la carta que inscribió y/o autorizó?</b></p>
+                                        <p>Para revisar en qué parte del proceso está la carta, usted debe ingresar a <i>Instrucciones > Consulta</i> y buscarla a través de nuestros filtros. Para revisar sus detalles, debe hacer clic en la lupa y en el Bitácora, bajo la cruz que se encuentra en la esquina superior derecha.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">17. ¿Qué debe hacer el cliente si no puede inscribir una carta y le aparece el siguiente mensaje?</b></p>
+                                        <p class="text-center"><b class="pregunta">“Apoderados seleccionados no cumplen validación de facultades ya que la empresa CHL RENTA TOTAL FONDO DE INVERSION PRIVADO RUT: 76.296.XXX-X, ES ADMINISTRADA POR CHL ASSET MANAGEMENT CHILE S.A //76.033.XXX-X”</b></p>
+                                        <p>El mensaje significa que este tipo de empresa con ILV referido a otro a nivel de RUT, no pueden operar en esta etapa en Banconexión 2.0. Como solución, se recomienda hacer este tipo de TX por PDF. Así, no pasará por ILV y tendrá el mismo seguimiento.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">18. ¿Qué debe hacer el cliente si no puede autorizar una carta porque el sistema señala que la clave de su dispositivo de seguridad no corresponde? </b></p>
+
+
+                                        <div>
+                                            <div class="content-img-demo">
+                                                <img src="img/demo/emp_preg_frecuentes-7.jpg" class="img-nuevo-login">
+                                            </div>
+                                        </div>
+
+                                        <p>Si le aparece este mensaje, significa que su dispositivo de seguridad no ha sido sincronizado correctamente.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">19. ¿Cuáles son los pasos para enviar una carta de categoría Boletas de Garantía por plantilla?</b></p>
+                                        <p>Para enviar una carta de Boletas de Garantía, los pasos los siguientes:</p>
+                                        <ul>
+                                            <li>
+                                                <p>1.- Comunique vía mail a su ejecutivo de Cuentas y/o a su asistente, las Condiciones Comerciales de la Boleta (tasa, moneda, plazo vencimiento, monto y comisión).</p>
+                                            </li>
+                                            <li>
+                                                <p>2.- El ejecutivo de Cuentas o debe ingresar dichas condiciones comerciales al Portal Interno.</p>
+                                            </li>
+                                            <li>
+                                                <p>3.- Ingrese a Banconexión 2.0, acceda al módulo Condiciones Comerciales e inscriba y posteriormente autorice la carta.</p>
+                                            </li>
+                                            <li>
+                                                <p>4.- Si envía la boleta vía PDF, no necesita crear ninguna Condición Comercial.</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">20. ¿Cómo se ingresa el tipo de cambio en una Compra y Venta de moneda spot y un Envío de Orden de Pago al Exterior? </b></p>
+                                        <p>El tipo de cambio debe estar previamente cerrado con su contraparte comercial. Este se desplegará automáticamente, después de algunos minutos.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">21. ¿Se de ingresar el TC pactado con el Banco cuando inscribo cartas de instrucción asociadas a Órdenes de Pago y Compra y Venta de Moneda?</b></p>
+                                        <p>Para las Órdenes de Pago, el TC se cierra con su ejecutivo o la mesa de dinero y se actualiza automáticamente en Banconexión 2.0. Sin embargo, para Compra y Venta de moneda, debe ingresar el TC al portal.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">22. El usuario posee  rol Inscriptor y quiere realizar una Venta de EUR con la paridad 1,1344 (Dólar), pero al seleccionar el tipo de operación (venta), el Portal le indica que no tienen tipo de cambio disponible. ¿Porque aparece ese mensaje?</b></p>
+                                        <p>Este mensaje aparece solo en la categoría Compra y Venta de Moneda —en Órdenes de Pago al Exterior funciona sin inconveniente— y se debe a que la paridad está entre EUR y USD. En estos momentos, el servicio por plantilla prediseñada no trae las paridades entre estas dos monedas. La única posibilidad, es hacerla vía formato PDF.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">23. ¿Qué debe hacer el cliente hacer si no visualiza el código de egreso para inscribir una Orden de Pago en Banconexión 2.0? </b></p>
+                                        <p>Si no visualiza el código de egreso para inscribir una Orden de Pago en el portal, el cliente debe enviar la carta en formato PDF. </p>
+                                        <p>En Banconexión 2.0, la Orden de Pago con código 20500 no puede ser trabajada como plantilla si la moneda de destino es distinta a la de origen. Se recomienda hacer una Compra Spot en la Moneda y Cuenta que se desea enviar al extranjero y luego, desde dicha Cuenta, enviar los fondos con el dinero abonado en la compra y venta anterior.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">24. Para hacer una transacción de Compra y Venta de Monedas vía plantilla prediseñada, en el tipo de TX Compra y Venta de Monedas Spot,  ¿se debe tener una cuenta en MX y otra cuenta en pesos?</b></p>
+                                        <p>Sí, para poder operar debe tener ambas cuentas.</p>
+                                    </li>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFourteen">
+                                <strong>XIV. Vales Vista</strong></a>
+                        </div>
+                        <div id="collapseFourteen" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿Qué tipos de Vales Vista están disponibles en Banconexión 2.0?</b></p>
+                                        <p>En el Portal, están disponibles los Vales Vista contra efectivo por instrucción digital y los Vales Vista unitario o masivo por TEF.</p>
+
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. Cuando se crea una plantilla, ¿los Vales Vista estarán disponibles para todos los usuarios o solo para el que la creó? </b></p>
+                                        <p>Los Vales Vista estarán disponibles para el usuario que creó la plantilla, para los autorizadores y para el que tenga habilitado el rol de consultas cartas.</p>
+                                    </li>
+
+                                    <br>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-group">
+                        <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapseFifteen">
+                                <strong>XV. Recaudación</strong></a>
+                        </div>
+                        <div id="collapseFifteen" class="accordion-body collapse">
+                            <div class="accordion-inner">
+                                <ul>
+                                    <li>
+                                        <p><b class="pregunta">1. ¿En qué consiste el portal de Recaudación?</b></p>
+                                        <p>Es una plataforma en Internet donde la empresa administra en forma eficiente y autónoma sus cuentas por cobrar, realizando inscripción de carteras en forma masiva, dejando disponible las cuentas por cobrar en la misma plataforma para su propia administración y la de sus proveedores o deudores.</p>
+
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">2. ¿En qué consiste la Recaudación Tradicional? </b></p>
+                                        <p>La Recaudación Tradicional o por Caja ofrece al cliente un medio centralizado para recaudar el pago por sus servicios en las Cajas del Banco de Chile a lo largo de todo el país, y opcionalmente en Sucursales Servipag. La Recaudación se recibe en cajas físicas contra la presentación de un cupón o papeleta, el cual puede ser emitido por la empresa o solicitado al Banco.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">3. ¿En qué consiste la Recaudación Electrónica opción PAC? </b></p>
+                                        <p>Permite al recaudador programar e instruir cobros automatizados a su cartera de clientes por algún servicio que ha entregado. El cobro se descuenta en forma automática en la cuenta corriente/vista del cliente pagador en base a un mandato suscrito previamente por él, y se cargan a la cuenta corriente de la empresa cliente que ha contratado el servicio con Banco de Chile.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">4. ¿Cuáles son los horarios y plazos tope para inscribir cargos PAC?</b></p>
+
+                                        <ul>
+                                            <li><b>Cargas por Banconexión:</b> hasta las 16:00 horas en día hábil.</li>
+                                            <li><b>Multibanco:</b> Inscripción nóminas hasta 48 horas antes del cargo, hasta las 16:00 hrs en días hábiles.</li>
+                                            <li><b>Monobanco:</b> Inscripción nóminas hasta 24 horas antes del cargo, hasta las 16:00 hrs en días hábiles.</li>
+                                            <li><b>Cargas por contingencia:</b> hasta las 17:00 hrs. en días hábiles.</li>
+                                        </ul>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">5. ¿Cómo puedo inscribir nóminas de cargo PAC?</b></p>
+                                        <p>En Banconexión, menú Servicio PAC, en la opción “Inscribir Cargos”</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">6. ¿En qué consiste la Recaudación Electrónica vía Botón de Pago?</b></p>
+                                        <p>Botón de Pagos, o Pago Electrónico en Internet, consiste en la conexión en línea entre el sitio WEB del Comercio y el Banco de Chile a través de Internet. Permite que los clientes del Comercio paguen cuentas o compren en línea utilizando medios de pago tradicionales como cuentas vista o cuentas corrientes en la web del comercio.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">7. ¿Cómo se obtiene la rendición de los pagos?</b></p>
+                                        <p>A través de Banconexión la empresa podrá ver en línea la información provisoria de su Recaudación.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">8. ¿Existe restricción de horario para que los clientes puedan realizar pagos a través del botón de pago Banco de Chile?</b></p>
+                                        <p>No, el Botón de Pago Banco de Banco de Chile funciona las 24 horas del día, los 365 días del año.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">9. ¿Dónde puedo obtener soporte técnico del producto?</b></p>
+                                        <p>En la Mesa de Ayuda Fonobank al 600 6372000. Dependiendo de la complejidad de la solicitud, el ejecutivo de atención dará solución en línea o creará un requerimiento para estudio y solución del área especializada.</p>
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">10. ¿En qué Portales de Internet está habilitado el Botón de Pagos Citiconnect?
+</b></p>
+                                        <p>Los portales Citiconnect son:</p>
+
+                                        <ul>
+                                            <li>SII (Servicio de Impuestos Internos)</li>
+                                            <li>TGR (Tesorería General de la República)</li>
+                                            <li>Servipag</li>
+                                            <li>Previred</li>
+                                            <li>Caja de Compensación Los Andes</li>
+                                        </ul>
+
+                                    </li>
+
+                                    <br>
+
+                                    <li>
+                                        <p><b class="pregunta">11. ¿Cómo se puede autorizar un pago si falta la firma de uno de los autorizadores?
+</b></p>
+                                        <p>El Cliente deberá enviar una carta (firmada por un apoderado) a su Ejecutivo Comercial autorizando el pago a través del proceso de contingencia. La carta deberá indicar el monto exacto que se desea autorizar y la cuenta corriente de cargo. Este proceso de contingencia se puede realizar hasta las 17:30 horas.</p>
+                                    </li>
+
+                                    <br>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="span12">
+                <a href="index.html#preguntas"><img src="img/btn-volver-preguntas.png" class="docs-volver"></a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- fin container -->
+
     <div class="full-container-bottom">
-    <div class="container">
-	    <div class="row" id="preguntas">
-	    <div class="span4 offset4">
-		  <img src="img/globo-bch.png">
+        <div class="container">
+            <div class="row" id="preguntas">
+                <div class="span4 offset4">
+                    <img src="img/globo-bch.png">
+                </div>
+
+                <!--<div class="span2 offset2">
+		  <a href="#ancla-proyecto" class="transicion"><img src="img/ir-inicio.png" id="ir-inicio"></a>
 		</div>
+-->
+                <div class="span12">
+                    <hr>
+                </div>
 
-		<div class="span2 offset2">
-		  <a href="#imagen" class="transicion"><img src="img/ir-inicio.png" id="ir-inicio"></a>
-		</div>
+                <div class="span8">
+                    <p class="footer-text">
+                        Casa Matriz: Ahumada 251, Santiago de Chile | Mesa Central: +56 2 26531111 <br> Políticas de Privacidad y Seguridad. | Código de Conducta y Buenas Prácticas de Bancos e Instituciones Financieras. <br> Guía del Cliente Bancario SBIF.
+                    </p>
+                </div>
 
-		<div class="span12">
-		  <hr>
-		</div>
+                <div class="span3 offset1">
+                    <!--img src="img/img-fonobank.png" class="pull-right"-->
+                </div>
 
-		<div class="span8">
-		  <p class="footer-text">
-			Casa Matriz: Ahumada 251, Santiago de Chile | Mesa Central: +56 2 26531111 <br>
-			Políticas de Privacidad y Seguridad. | Código de Conducta y Buenas Prácticas de Bancos e Instituciones Financieras. <br>
-			Guía del Cliente Bancario SBIF.
-		  </p>
-		</div>
-
-		<div class="span3 offset1">
-		  <!--img src="img/img-fonobank.png" class="pull-right"-->
-		</div>		
-
-	  </div>
-	  </div>
-	</div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/custom.js"></script>
-  </body>
+</body>
+
 </html>

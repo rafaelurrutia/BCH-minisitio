@@ -4598,8 +4598,20 @@ input[type="submit"].btn.btn-mini {
 	margin-top: 0;
 	margin-right: 10px;
 	margin-bottom: 0;
-	margin-left: 55px;
+	margin-left: 18px;
 }
+
+
+/*.navbar .nav {
+	position: relative;
+	left: 0;
+	display: block;
+	float: left;
+	margin-top: -65;
+	margin-right: 10px;
+	margin-bottom: 0;
+	margin-left: 214px;
+}*/
 
 .navbar .nav.pull-right {
   float: right;
@@ -5522,7 +5534,7 @@ input[type="submit"].btn.btn-mini {
 .popover.left .arrow:after {
   right: 1px;
   bottom: -10px;
-  border-left-color: #5e6674;
+  border-left-color: #ffffff;
   border-right-width: 0;
 }
 
